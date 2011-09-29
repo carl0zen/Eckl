@@ -1,17 +1,16 @@
 <?php
 // Define Global Variables
-
 $GEN_USUARIO=false;
 $GEN_IDIOMA="es";
 $GEN_USER_ID=false;
 $GEN_SC_ID=false;
-$GEN_PATH_SERVIDOR="/Users/carlospriego/Sites/ecologikal";
-$GEN_PATH_MEMBERS_PICTURES="/Users/carlospriego/Sites/ecologikal/pictures/";
-$GEN_PATH_CENTERS_PICTURES="d:/www/html/ecologikal/pictures/sc/";
-$GEN_URL_MEMBERS_PICTURES="http://localhost:8888/ecologikal/pictures/";
-$GEN_URL_CENTERS_PICTURES="http://localhost:8888/ecologikal/pictures/sc/";
+$GEN_PATH_SERVIDOR="/Users/carlospriego/Sites/github/Eckl";
+$GEN_PATH_MEMBERS_PICTURES="/Users/carlospriego/Sites/github/Eckl/pictures/";
+$GEN_PATH_CENTERS_PICTURES="/Users/carlospriego/Sites/github/Eckl/pictures/sc/";
+$GEN_URL_MEMBERS_PICTURES="http://localhost:8888/github/Eckl/pictures/";
+$GEN_URL_CENTERS_PICTURES="http://localhost:8888/github/Eckl/pictures/sc/";
 
-$GEN_URL_SERVIDOR="http://localhost:8888/ecologikal";
+$GEN_URL_SERVIDOR="http://localhost:8888/github/Eckl";
 $GEN_URL_IMAGENES=$GEN_URL_SERVIDOR ."/images";
 
 $user_id="";
@@ -20,7 +19,7 @@ $goto="";
 //Include Necessary Files
 
 require_once($GEN_PATH_SERVIDOR."/_config/sesion.php");
-require_once($GEN_PATH_SERVIDOR.'/_config/conn.php'); 
+require_once($GEN_PATH_SERVIDOR."/_config/conn.php"); 
 include_once($GEN_PATH_SERVIDOR."/_backend/functions.php");
 include_once($GEN_PATH_SERVIDOR."/_backend/functions_member.php");
 require_once($GEN_PATH_SERVIDOR."/_lang/".$GEN_IDIOMA."/members.php");
