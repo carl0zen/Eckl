@@ -1,8 +1,8 @@
 <?php include_once($_SERVER['DOCUMENT_ROOT']."/ecologikal/include/inc.php");?>
-<?php include_once(_ROOT_."/include/check_sesion.php");?>
-<?php require_once(_ROOT_.'/connections/ecologikal.php'); ?>
-<?php require_once(_ROOT_.'/include/funciones.php'); ?>
-<?php include_once(_ROOT_."/include/members/funciones.php");?>
+<?php include_once(_ROOT_PATH_."/include/check_sesion.php");?>
+<?php require_once(_ROOT_PATH_.'/connections/ecologikal.php'); ?>
+<?php require_once(_ROOT_PATH_.'/include/funciones.php'); ?>
+<?php include_once(_ROOT_PATH_."/include/members/funciones.php");?>
 <?php
 /*
  * jQuery File Upload Plugin PHP Example 5.2.2

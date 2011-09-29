@@ -1,53 +1,37 @@
-<?php 
-require_once($_SERVER['DOCUMENT_ROOT']."/ecologikal/_config/config.php");
 
+<?php
 $user_id=isset($_GET['user_id']) ? $_GET['user_id'] : "";
 if($user_id=="")$user_id=$GEN_USER_ID;
-
 ?>
 
 <script>
 	$(document).ready(function(e){
        
-		
+		// Filters Select
 
-		$('#content').click(function(){ 
-		        mouse_is_inside=true; 
-		    });
-		$('#content').hover(function(){ 
-		        mouse_is_inside=true; 
-		    }, function(){ 
-		        mouse_is_inside=false; 
-		    });
-
-		    $("body").mouseup(function(){ 
-		        if(! mouse_is_inside){
-					$('#stream #postcomment').slideUp(300);
-					$('#stream textarea').animate({
-						height:'15'
-					});
-					$('div#profile_info').slideDown(400);
-				} 
-		    });
+		$("select").change(function () {
+		          $("select option:selected").each(function () {
+						if($(this).hasClass('pop')) {$('.subfilter').hide();$('select.subfilter#pop').show();}
+						if($(this).hasClass('date')){$('.subfilter').hide();$('select.subfilter#date').show();}
+						if($(this).hasClass('geo')) {$('.subfilter').hide();$('span.subfilter#geo').show();}
+		              });
+		        })
+		        .trigger('change');
 		
-		$('#stream textarea').mouseup(function(){
-			$(this).animate({
-				height:'45'
-			});
-			$('#stream #postcomment').slideDown(300);
-			$('div#profile_info').slideUp(400);
-		});
-		
-		load_html("#stream_comments",'<?php echo _HOME_URL_;?>/include/members/stream/members_stream_get_messages.php?user_id=<?php echo $user_id;?>&q='+ 1*new Date());
+		load_html("#stream_comments",'<?=_VIEWS_URL_?>members/stream/members_stream_get_messages.php?user_id=<?php echo $user_id;?>&q='+ 1*new Date());
 	});
 </script>
 
 <div id="stream">
-	<h1><div id="stream_btn" class="pageicon"></div><?php echo LANGUAGE_MEMBERS_TEXT_STREAM_KNOWLEDGE;?></h1>
-	<textarea name="stream_comment" id="stream_comment"></textarea>
-<div id="postcomment">
-	<div id="filter"><p>Filter Knowledge</p>
-		<select>
+	<h1><div id="stream_btn" class="pageicon"></div>Tree of Knowledge</h1>
+	
+	<div id="filter"><p>Filter Knowledge By</p>
+		<select id="mainfilter">
+			<option class="pop">Popularity</option>
+			<option class="date">Date</option>
+			<option class="geo">GeoLocation</option>
+		</select>
+		<select class="subfilter" id="cat">
 			<option>Building</option>
 			<option>Community Governance</option>
 			<option>Finance & Economics</option>
@@ -56,17 +40,29 @@ if($user_id=="")$user_id=$GEN_USER_ID;
 			<option>Tools & Technology</option>
 			<option>Health & Spirituality</option>
 		</select>
+		<select class="subfilter" id="pop">
+			<option>Best Rated</option>
+			<option>Most Commented</option>
+		</select>
+		<select class="subfilter" id="date">
+			<option>Newest</option>
+			<option>Oldest</option>
+		</select>
+		<span class="subfilter" id="geo">Within <select>
+				<option>10</option>
+				<option>20</option>
+				<option>50</option>
+				<option>100</option>
+			</select>
+			<select>
+				<option>km</option>
+				<option>miles</option>
+			</select>
+		</span>
+		
+		<button>My Tree</button>
+		<button>The Forest</button>
 	</div>
-	 <div id="buttons">
-	 	<div class="btn_container tiptip" title="Land & Nature"><input type="button" onclick="javascript:stream_post(4);" name="post" id="ln_share_button" value="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"/></div>
-	 	<div class="btn_container tiptip" title="Building"><input type="button" onclick="javascript:stream_post(1);" name="post" id="bc_share_button" value="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"/></div>
-	 	<div class="btn_container tiptip" title="Community Government"><input type="button" onclick="javascript:stream_post(2);" name="post" id="cg_share_button" value="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"/></div>
-		<div class="btn_container tiptip" title="Finance & Economics"><input type="button" onclick="javascript:stream_post(3);" name="post" id="fe_share_button" value="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"/></div>
-		<div class="btn_container tiptip" title="Culture & Education"><input type="button" onclick="javascript:stream_post(5);" name="post" id="ce_share_button" value="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"/></div>
-		<div class="btn_container tiptip" title="Tools & Technology"><input type="button" onclick="javascript:stream_post(6);" name="post" id="tt_share_button" value="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"/></div>
-		<div class="btn_container tiptip" title="Health & Spirituality"><input type="button" onclick="javascript:stream_post(7);" name="post" id="hs_share_button" value="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"/></div>
-	 </div><!--Buttons-->
- </div><!--Post Comment-->
 
 <div id="stream_comments">
     <div id="stream_comments2">

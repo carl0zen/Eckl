@@ -1,8 +1,7 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/ecologikal/_config/config.php");?>
-<script type="text/javascript" src="<?php echo _HOME_URL_;?>/embed/jquery.oembed.1.1.0/jquery.oembed.js"></script>
 
-<script src="<?php echo _HOME_URL_?>/js/jquery.timeago/jquery.timeago.js"></script>
-<script src="<?php echo _HOME_URL_?>/js/jquery.timeago/jquery.timeago.es.js"></script>
+<script src="<?= _PLUGINS_URL_?>jquery.oembed/jquery.oembed.js"></script>
+<script src="<?= _ROOT_PATH_URL_?>/jquery.timeago/jquery.timeago.js"></script>
+<script src="<?= _ROOT_PATH_URL_?>/jquery.timeago/jquery.timeago.es.js"></script>
 
 <script type="text/javascript"> 
 	$(function() {
@@ -62,7 +61,7 @@
 			if(file_exists($GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$row_stream_messages['from_user_id'])."/profile_mini.jpg")){
 				$image_url_profile_mini=$GEN_URL_MEMBERS_PICTURES.members_get_info("hash",$row_stream_messages['from_user_id'])."/profile_mini.jpg";
 			}else{
-				$image_url_profile_mini=_HOME_URL_."/images/avatar_mini.png";
+				$image_url_profile_mini=_ROOT_PATH_URL_."/images/avatar_mini.png";
 			}
 			?>
             <div id="comments_list_<?php echo $row_stream_messages['members_stream_id']?>">
@@ -74,11 +73,11 @@
                         </div>
                         <div id="rated"  <?php if(!(int)$row_stream_messages['rated']){?> style="display:none"<?php }?> onclick="javascript:rate_message(<?php echo $row_stream_messages['members_stream_id']?>,0)">Unrate</div>
                     	<div id="karma"><?php echo (int)$row_stream_messages['useful']?> Dharma <?php echo (int)$row_stream_messages['unuseful']?> Karma </div>
-                        <div class="avatar"><a href="<?php echo _HOME_URL_."/profile.php?user_id=".$row_stream_messages['from_user_id'];?>"><img src="<?php echo $image_url_profile_mini;?>"></a>
+                        <div class="avatar"><a href="<?php echo _ROOT_PATH_URL_."/profile.php?user_id=".$row_stream_messages['from_user_id'];?>"><img src="<?php echo $image_url_profile_mini;?>"></a>
                             <div class="category"><div id="category_id_<?php echo $row_stream_messages['skill_category_id'];?>"></div></div>
                         </div>
                         <div class="comment_text">
-                            <div id="member_link"><a href="<?php echo _HOME_URL_."/profile.php?user_id=".$row_stream_messages['from_user_id'];?>"><?php echo members_get_info("nombre",$row_stream_messages['from_user_id']) . " " . members_get_info("apellido",$row_stream_messages['from_user_id'])?></a>&nbsp;<span id="timestamp"><abbr class="timeago" title="<?php echo $row_stream_messages['date2']?>"><?php echo $row_stream_messages['date2']?></abbr></span></div>
+                            <div id="member_link"><a href="<?php echo _ROOT_PATH_URL_."/profile.php?user_id=".$row_stream_messages['from_user_id'];?>"><?php echo members_get_info("nombre",$row_stream_messages['from_user_id']) . " " . members_get_info("apellido",$row_stream_messages['from_user_id'])?></a>&nbsp;<span id="timestamp"><abbr class="timeago" title="<?php echo $row_stream_messages['date2']?>"><?php echo $row_stream_messages['date2']?></abbr></span></div>
                          <?php if($row_stream_messages['from_user_id']==$GEN_USER_ID or $row_stream_messages['to_user_id']==$GEN_USER_ID){?>
 						<div id="remove" onclick="javascript:remove_comment(<?php echo $row_stream_messages['members_stream_id']?>,'comments_list_<?php echo $row_stream_messages['members_stream_id']?>');" ><span class="ui-icon ui-icon-closethick" ></span></div>
                        	<?php }?>
@@ -132,7 +131,7 @@
 					if(file_exists($GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$row_sub_comments['from_user_id'])."/profile_mini2.jpg")){
 						$image_url_profile_mini=$GEN_URL_MEMBERS_PICTURES.members_get_info("hash",$row_sub_comments['from_user_id'])."/profile_mini2.jpg";
 					}else{
-						$image_url_profile_mini=_HOME_URL_."/images/avatar_mini2.png";
+						$image_url_profile_mini=_ROOT_PATH_URL_."/images/avatar_mini2.png";
 					}
 					$message2=$row_sub_comments['message'];
 					$f_url=find_url($message2);
@@ -147,11 +146,11 @@
                         </div>
                         <div id="rated"  <?php if(!(int)$row_sub_comments['rated']){?> style="display:none"<?php }?> onclick="javascript:rate_message(<?php echo $row_sub_comments['members_stream_id']?>,0)">Unrate</div>
                     	<div id="karma"><?php echo (int)$row_sub_comments['useful']?> Dharma <?php echo (int)$row_sub_comments['unuseful']?> Karma </div>
-						<div class="avatar"><a href="<?php echo _HOME_URL_."/profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><img src="<?php echo $image_url_profile_mini;?>"></a>
+						<div class="avatar"><a href="<?php echo _ROOT_PATH_URL_."/profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><img src="<?php echo $image_url_profile_mini;?>"></a>
 							<div class="category"></div>
 						</div>
 						<div class="comment_text">
-							<div id="member_link"><a href="<?php echo _HOME_URL_."/profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><?php echo members_get_info("nombre",$row_sub_comments['from_user_id']) . " " . members_get_info("apellido",$row_sub_comments['from_user_id'])?></a>
+							<div id="member_link"><a href="<?php echo _ROOT_PATH_URL_."/profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><?php echo members_get_info("nombre",$row_sub_comments['from_user_id']) . " " . members_get_info("apellido",$row_sub_comments['from_user_id'])?></a>
 							&nbsp;<span id="timestamp"><abbr class="timeago" title="<?php echo $row_sub_comments['date2']?>"><?php echo $row_sub_comments['date2']?></abbr></span></div>
 							 <?php if($row_sub_comments['from_user_id']==$GEN_USER_ID or $row_sub_comments['from_user_id']==$GEN_USER_ID or $row_sub_comments['to_user_id']==$GEN_USER_ID){?>
 							<div id="remove" onclick="javascript:remove_comment(<?php echo $row_sub_comments['members_stream_id']?>,'comment_<?php echo $row_sub_comments['members_stream_id']?>');" ><span class="ui-icon ui-icon-closethick" ></span></div>

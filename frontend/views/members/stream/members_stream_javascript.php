@@ -8,7 +8,7 @@
 		var dataString="command=karma_update&member_stream_id="+id;
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _HOME_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?php echo _ROOT_PATH_URL_?>/include/members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -28,7 +28,7 @@
 			"&rate_value="+v;
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _HOME_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?php echo _ROOT_PATH_URL_?>/include/members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -48,12 +48,12 @@
 		return false;
 	}
 	function show_more_comments(param){
-		$("#show_more_comments").html("<img src='<?php echo _HOME_URL_?>/images/ajax-loader.gif'>")
+		$("#show_more_comments").html("<img src='<?php echo _ROOT_PATH_URL_?>/images/ajax-loader.gif'>")
 		$("#show_more_comments").append("<div id='loader'><img src='http://casasemilla.sytes.net/ecologikal/images/ajax-loader.gif'> Cargando...</div>");
 		var dataString=param;
 		$.ajax({	
 			type: "POST",
-			url: "<?php echo _HOME_URL_?>/include/members/stream/members_stream_get_messages.php",
+			url: "<?php echo _ROOT_PATH_URL_?>/include/members/stream/members_stream_get_messages.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -71,7 +71,7 @@
 			"&command=get_sub_comments";
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _HOME_URL_?>/include/members/stream/members_stream_get_sub_comments.php",
+			url: "<?php echo _ROOT_PATH_URL_?>/include/members/stream/members_stream_get_sub_comments.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -88,7 +88,7 @@
 			"&command=remove_message";
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _HOME_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?php echo _ROOT_PATH_URL_?>/include/members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -135,7 +135,7 @@
 			"&hash="+current_stream_post;
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _HOME_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?php echo _ROOT_PATH_URL_?>/include/members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -176,7 +176,7 @@
 			//console.log(dataString);
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _HOME_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?php echo _ROOT_PATH_URL_?>/include/members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",

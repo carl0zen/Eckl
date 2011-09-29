@@ -1,4 +1,4 @@
-<?php include_once(_ROOT_."/include/idiomas/"._LANG_."/gen.php");
+<?php include_once(_ROOT_PATH_."/include/idiomas/"._LANG_."/gen.php");
 	
 function find_url($text){
 	$reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
@@ -70,7 +70,7 @@ function members_get_url_profile_picture($user_id=0,$size=0){
 	if(file_exists($GEN_PATH_MEMBERS_PICTURES.$user_dir."/profile.jpg")){
 		$pic=$GEN_URL_MEMBERS_PICTURES.$user_dir."/".$array_profiles[$size];
 	}else{
-		$pic=_HOME_URL_."/images/avatar.png";
+		$pic=_ROOT_PATH_."/images/avatar.png";
 	}
 	return $pic;
 }

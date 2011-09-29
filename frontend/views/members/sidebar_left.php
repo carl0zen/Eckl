@@ -83,7 +83,7 @@
 					if(file_exists($GEN_PATH_MEMBERS_PICTURES.$user_dir."/profile.jpg")){?>
 						<img src="<?php echo $GEN_URL_MEMBERS_PICTURES.$user_dir."/profile.jpg";?>">
 					<?php }else{?>
-						<img src="<?php echo _HOME_URL_."/images/avatar.png";?>">
+						<img src="<?php echo _ROOT_URL_."/images/avatar.png";?>">
 					<?php }?>
 				</profilepic>
 				<fields>
@@ -156,7 +156,7 @@
 		<div id="gallerycontainer" class="container">
 			<div id="title">My Pictures</div>
 			<?php if($GEN_USER_ID && $GEN_USER_ID==$user_id){?>
-			<div id="loadpics" onClick="javascript:$(location).attr('href','<?php echo _HOME_URL_;?>/profile.php?goto=image-uploader');">Subir Imagenes</div>
+			<div id="loadpics" onClick="javascript:$(location).attr('href','<?=_ROOT_URL_?>/profile.php?goto=image-uploader');">Subir Imagenes</div>
 			<?php } ?>
 		</div>
 		<div id="gamecontainer" class="container">
