@@ -1,65 +1,58 @@
-<?php include_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/config.php");
-
-$user_id=isset($_GET['user_id']) ? $_GET['user_id'] : $GEN_USER_ID;
-$goto=isset($_GET['goto']) ? $_GET['goto'] : "stream";
-
-$array_goto["gallery"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/include/members/gallery/gallery.php");;
-$array_goto["stream"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/include/members/stream/members_stream.php");;
-$array_goto["profile"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/include/members/profile.php");;
-$array_goto["image-uploader"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/include/members/image_uploader/index.php");;
-$array_goto["sc-image-uploader"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/include/centros/image_uploader/index.php");;
-$array_goto["sc-gallery"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/include/centros/gallery/gallery.php");;
-$array_goto["flower"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/flower.php");;
-
-?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php"); ?>
 <!DOCTYPE html> 
-<html lang="en"> 
+<html> 
     <head> 
         <meta charset="utf-8" /> 
         <title>Ecologikal</title> 
-        <link rel="stylesheet" href="<?php echo $GEN_URL_SERVIDOR?>/_frontend/css/global.css" media="screen" />
-		<link rel="stylesheet" href="<?php echo $GEN_URL_SERVIDOR?>/_frontend/css/stream.css" type="text/css" />        
-        <link rel="stylesheet" href="<?php echo $GEN_URL_SERVIDOR?>/_plugins/jquery/css/jquery.ui.theme.css"  type="text/css" />
-        <link rel="stylesheet" href="<?php echo $GEN_URL_SERVIDOR?>/_plugins/jquery/css/jquery.ui.all.css"  type="text/css" />
+        <link rel="stylesheet" href="<?=_HOME_URL_?>frontend/css/global.css" media="screen" />
+		<link rel="stylesheet" href="<?=_HOME_URL_?>frontend/css/stream.css" type="text/css" />        
+        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery/css/jquery.ui.theme.css"  type="text/css" />
+        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery/css/jquery.ui.all.css"  type="text/css" />
+        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery.fileupload/jquery.fileupload-ui.css" />
 
-        <link rel="stylesheet" href="<?php echo $GEN_URL_SERVIDOR;?>/js/juery-File-Upload/jquery.fileupload-ui.css" />
+		<script src="<?=_PLUGIN_URL_?>raphael.js"></script>
 
-        <script src="NEW/raphael.js"></script>
-
-		<script src="<?php echo $GEN_URL_SERVIDOR;?>/js/jquery/jquery-1.6.1.min.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/external/jquery.bgiframe-2.1.2.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.core.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.widget.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.mouse.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.button.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.draggable.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.position.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.resizable.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.dialog.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.effects.core.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.accordion.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.button.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.autocomplete.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.selectmenu.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/jquery-ui-1.8.14.custom/development-bundle/ui/jquery.ui.slider.js"></script>
-
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/js/main.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR?>/js/jquery.livequery.js"></script>
-
-        <script src="<?php echo $GEN_URL_SERVIDOR;?>/jquery-ui-1.8.14.custom/js/jquery-ui-1.8.14.custom.min.js"></script>
-        <script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR;?>/js/juery-File-Upload/jquery.iframe-transport.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR;?>/js/juery-File-Upload/jquery.fileupload.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR;?>/js/juery-File-Upload/jquery.fileupload-ui.js"></script>
-        <script src="<?php echo $GEN_URL_SERVIDOR;?>/include/members/image_uploader/application.js"></script>
-
-		<script type="text/javascript" src="js/jquery.mousewheel.js"></script> 
-		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>        
-		<script src="js/jquery.tipTip.minified.js"></script>
+<!--		<script src="<?=_PLUGIN_URL_?>jquery/jquery-1.5.1.min.js"></script> -->
 		
-		<script src="js/flower.js" type="text/javascript"></script>
-
-        <?php include_once($GEN_PATH_SERVIDOR."/include/members/stream/members_stream_javascript.php") ?>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+		
+		<script src="<?=_PLUGIN_URL_?>jquery/jquery-ui-1.8.14.custom.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/jquery.bgiframe.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.core.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.widget.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.mouse.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.draggable.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.position.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.resizable.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.dialog.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.effects.core.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.accordion.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.autocomplete.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/jquery.ui.selectmenu.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.slider.min.js"></script>
+        
+        <script src="<?=_PLUGIN_URL_?>jquery.livequery/jquery.livequery.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery.fileupload/jquery.iframe-transport.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery.fileupload/jquery.fileupload.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery.fileupload/jquery.fileupload-ui.js"></script>
+        <script src="<?=_VIEWS_URL_?>members/image_uploader/application.js"></script>
+		
+        
+		<script src="<?=_PLUGIN_URL_?>jquery.mousewheel.js"></script> 
+		<script src="<?=_PLUGIN_URL_?>jquery.scrollpane/jquery.jscrollpane.min.js"></script>        
+		<script src="<?=_PLUGIN_URL_?>jquery.tipTip/jquery.tipTip.minified.js"></script>
+		
+		
+		
+		
+		<script src="<?=_JS_URL_?>main.js"></script>
+		<script src="<?=_JS_URL_?>flower.js"></script>
+		
+		
+        <?php include_once(_VIEWS_PATH_."members/stream/members_stream_javascript.php") ?>
 
         <script> 
 			$(document).ready(function(e){
@@ -99,7 +92,6 @@ $array_goto["flower"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/flower.php");
 				
 			});
         </script>
-		
     </head> 
 	    <body> 
 			<header>
@@ -119,7 +111,7 @@ $array_goto["flower"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/flower.php");
 
 								<div id="accountlist">
 									<ul>
-										<li><a  href="<?php echo $GEN_URL_SERVIDOR?>/profile.php">Profile</a></li>
+										<li><a  href="<?=_VIEWS_URL ?>members/member_profile.php">Profile</a></li>
 										<li><a  href="#">Settings</a></li>
 										<li><a  href="#">Log out</a></li>
 									</ul>
@@ -132,4 +124,5 @@ $array_goto["flower"]=array($GEN_PATH_SERVIDOR,$GEN_URL_SERVIDOR,"/flower.php");
 						</toolbar>
 						<logo onClick="load_html('content', '<?php echo $array_goto["profile"][1].$array_goto["profile"][2];?>?no_page='+current_gallery_page+'&user_id=<?php echo $user_id;?>')"></logo>
 			</header>
+			
 
