@@ -359,7 +359,7 @@ button:active{
 	display:none;
 }
 #close{
-	background:url(../images/close.png) no-repeat right;
+	background:url("images/close.png") no-repeat right;
 	width:30px;
 	height:30px;
 	position:absolute;
@@ -615,7 +615,7 @@ avatar {
 border-radius:8px 0 8px 0;
 }
 memberavatar{
-	background:#ccc url("/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg");
+	background:#ccc url("images/avatar_mini2.png");
 	width:30px;
 	height:30px;
 	margin:0 0 10px 10px;
@@ -1343,7 +1343,7 @@ div.text{
     margin-left:10px;
 }
 #pager div div{
-    background:url(images/tn3.png);
+    background:url("images/tn3.png");
     width:30px;
     height:31px;
     margin-top:9px;

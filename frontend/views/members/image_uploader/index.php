@@ -1,5 +1,5 @@
 <div class="uploader" id="fileupload">
-    <form action="<?php echo _ROOT_URL_;?>/include/members/image_uploader/upload.php" method="POST" enctype="multipart/form-data">
+    <form action="<?=_VIEWS_URL_?>members/image_uploader/upload.php" method="POST" enctype="multipart/form-data">
         <div class="fileupload-buttonbar">
             <label class="ui-button fileinput-button">
                 <span>Add files...</span>
@@ -7,7 +7,7 @@
             </label>
             <button type="submit" class="ui-button start">Start upload</button>
             <button type="reset" class="ui-button cancel">Cancel upload</button>
-            <button onClick="javascript:$(location).attr('href','<?php echo _ROOT_URL_;?>/template.php?goto=gallery');" type="reset" class="ui-button start">Goto Gallery</button>
+            <button onClick="javascript:$(location).attr('href','<?=_VIEWS_URL_?>/member_profile.php?goto=gallery');" type="reset" class="ui-button start">Goto Gallery</button>
         </div>
     </form>
     <div class="fileupload-content">

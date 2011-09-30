@@ -1,8 +1,3 @@
-<?php include_once($_SERVER['DOCUMENT_ROOT']."/ecologikal/include/inc.php");?>
-<?php include_once(_ROOT_URL_"/include/check_sesion.php");?>
-<?php require_once(_ROOT_URL_'/connections/ecologikal.php'); ?>
-<?php require_once(_ROOT_URL_'/include/funciones.php'); ?>
-<?php include_once(_ROOT_URL_"/include/members/funciones.php");?>
 <?php
 /*
  * jQuery File Upload Plugin PHP Example 5.2.2
@@ -25,11 +20,11 @@ class UploadHandler
     function __construct($options=null) {
 
 
-		global $GEN_PATH_MEMBERS_PICTURES, $GEN_URL_MEMBERS_PICTURES, $GEN_USER_ID, _ROOT_URL_;
-		$user_image_galery_path= $GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$GEN_USER_ID)."/";
-		$user_image_galery_url= $GEN_URL_MEMBERS_PICTURES.members_get_info("hash",$GEN_USER_ID)."/";
-		$user_image_galery_th_path= $GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$GEN_USER_ID)."/thumbnails/";
-		$user_image_galery_th_url= $GEN_URL_MEMBERS_PICTURES.members_get_info("hash",$GEN_USER_ID)."/thumbnails/";
+		global $GEN_USER_ID;
+		$user_image_galery_path= _MEMBER_PICS_PATH_.members_get_info("hash",$GEN_USER_ID)."/";
+		$user_image_galery_url= _MEMBER_PICS_URL_.members_get_info("hash",$GEN_USER_ID)."/";
+		$user_image_galery_th_path= _MEMBER_PICS_PATH_.members_get_info("hash",$GEN_USER_ID)."/thumbnails/";
+		$user_image_galery_th_url= _MEMBER_PICS_URL.members_get_info("hash",$GEN_USER_ID)."/thumbnails/";
 		
 		
 		//
@@ -38,7 +33,7 @@ class UploadHandler
 		if (!file_exists($user_image_galery_th_path))@mkdir($user_image_galery_th_path);
 
         $this->options = array(
-            'script_url' => _ROOT_URL_."/include/members/image_uploader/upload.php",
+            'script_url' => _VIEWS_URL_."members/image_uploader/upload.php",
             'upload_dir' => $user_image_galery_path,
             'upload_url' => $user_image_galery_url,
             'param_name' => 'files',
@@ -255,9 +250,9 @@ class UploadHandler
                     }
                 }
 
-		global $GEN_PATH_MEMBERS_PICTURES, $GEN_URL_MEMBERS_PICTURES, $GEN_USER_ID, _ROOT_URL_;
-		$user_image_galery_path= $GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$GEN_USER_ID)."/";
-		$user_image_galery_th_path= $GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$GEN_USER_ID)."/thumbnails/";
+		global $GEN_USER_ID;
+		$user_image_galery_path= _MEMBER_PICS_PATH_.members_get_info("hash",$GEN_USER_ID)."/";
+		$user_image_galery_th_path= _MEMBER_PICS_PATH_.members_get_info("hash",$GEN_USER_ID)."/thumbnails/";
 
 				if(file_exists($user_image_galery_path.$file->hash.".tmp"))unlink($user_image_galery_path.$file->hash.".tmp");
 				if(file_exists($user_image_galery_th_path.$file->hash.".tmp"))unlink($user_image_galery_th_path.$file->hash.".tmp");

@@ -38,7 +38,7 @@ $rst = mysql_query($sql, $ecologikal);
 			"&hash="+hash;
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/gallery/actions.php?q="+ 1*new Date(),
+			url: "<?=_VIEWS_URL_?>members/gallery/actions.php?q="+ 1*new Date(),
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -56,7 +56,7 @@ $rst = mysql_query($sql, $ecologikal);
 	/* jQuery lightBox plugin - Gallery style */
 	
 	#gallery #picture{
-		background:url(<?php echo _ROOT_URL_?>/images/ajax-loader.gif) no-repeat center;
+		background:url(<?=_IMAGES_URL_?>ajax-loader.gif) no-repeat center;
 		width:78px;
 		height:59px;
 		overflow:hidden;
@@ -71,7 +71,7 @@ $rst = mysql_query($sql, $ecologikal);
 	<h1 >Gallery</h1>
 </div>
 <?php if($GEN_USER_ID && $GEN_USER_ID==$user_id){?>
-<div id="loadpics" onClick="javascript:$(location).attr('href','<?php echo _ROOT_URL_;?>/template.php?goto=image-uploader');">Subir Imagenes</div>
+<div id="loadpics" onClick="javascript:$(location).attr('href','<?=_VIEWS_URL_?>/member_profile.php?goto=image-uploader');">Subir Imagenes</div>
 <?php } ?>
 
 <div id="gallery">
@@ -85,7 +85,7 @@ if(mysql_num_rows($rst)){
 		$image_path_th=$user_image_galery_path."thumbnails/".$row['hash'].".jpg";
 		$image_url_th=$user_image_galery_url."thumbnails/".$row['hash'].".jpg";
 		if(file_exists($image_path) && file_exists($image_path_th)){?>
-			<div id="picture"><div onclick="javascript:delete_picture($(this),'<?php echo $row['hash']?>');" id="delete"><span class="ui-icon ui-icon-circle-close"></span><div class="text">Delete</div></div><a  onClick="javascript: current_gallery_page=<?php echo $no_page?>; load_html('content', '<?php echo _ROOT_URL_?>/include/members/gallery/show_picture.php?no_page=<?php echo ($no_page*$pictures_page)+$c;?>&user_id=<?php echo $user_id?>')" href="javascript:;"><img src="<?php echo $image_url_th;?>"></a></div>
+			<div id="picture"><div onclick="javascript:delete_picture($(this),'<?php echo $row['hash']?>');" id="delete"><span class="ui-icon ui-icon-circle-close"></span><div class="text">Delete</div></div><a  onClick="javascript: current_gallery_page=<?php echo $no_page?>; load_html('content', '<?=_VIEWS_URL_?>members/gallery/show_picture.php?no_page=<?php echo ($no_page*$pictures_page)+$c;?>&user_id=<?php echo $user_id?>')" href="javascript:;"><img src="<?php echo $image_url_th;?>"></a></div>
 
 <?php 
 		$c++;
@@ -106,7 +106,7 @@ if(mysql_num_rows($rst)){
 		$p=0;
 			while($p<($total_pictures/$pictures_page)){
 		?>
-	    <div onClick="javascript: load_html('content', '<?php echo _ROOT_URL_?>/include/members/gallery/gallery.php?no_page=<?php echo $p;?>&user_id=<?php echo $user_id?>')" ><a href="javascript:;"><?php echo $p+1?></a></div>
+	    <div onClick="javascript: load_html('content', '<?=VIEWS_URL_?>members/gallery/gallery.php?no_page=<?php echo $p;?>&user_id=<?php echo $user_id?>')" ><a href="javascript:;"><?php echo $p+1?></a></div>
         <?php $p++;	}?>
     <?php }else{?>
 		    <div  id="no_more_comments"><?php echo LANGUAGE_MEMBERS_TEXT_NOT_MORE_PICTURES;?></div>

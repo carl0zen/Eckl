@@ -1,3 +1,4 @@
+
 <script>
 	$(document).ready(function(e){
 			//RATE SKILLS
@@ -101,28 +102,28 @@
 
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>77%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>80%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>67%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d14f0baee/profile_mini2.jpg" /></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d14f0baee/profile_mini2.jpg" /></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>90%</grade>
@@ -134,14 +135,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -153,14 +154,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -172,7 +173,7 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>93%</grade>
@@ -191,14 +192,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>44%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>55%</grade>
@@ -210,14 +211,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -235,14 +236,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>95%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -260,14 +261,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>90%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>75%</grade>
@@ -279,14 +280,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -298,14 +299,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -323,14 +324,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>88%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>98%</grade>
@@ -348,14 +349,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>	
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>	
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>91%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>65%</grade>
@@ -373,14 +374,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -392,14 +393,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -411,14 +412,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -430,14 +431,14 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>
 			</reference>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Alex Mass</username>
 				<description>I think you are very skillFull in this area</description>
 				<refgrade>95%</grade>
@@ -449,7 +450,7 @@
 			<description>This is just a test DescriptionThis is just a test DescriptionThis is just a test DescriptionThis is just a test Description<span id="showreferences">Show References (<refnumber>)</span></description>
 			<reference>
 				<userid>12</userid>
-				<avatar><a href="#"><img src="/ecologikal/pictures/4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
+				<avatar><a href="#"><img src="<?=_MEMBER_PICS_URL_?>4e39d0ac405fa/profile_mini2.jpg"/></a></avatar>
 				<username>Carlos Pérez Priego</username>
 				<description>I think you are very skillFull</description>
 				<refgrade>97%</grade>

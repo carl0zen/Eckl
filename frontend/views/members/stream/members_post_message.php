@@ -1,6 +1,5 @@
 <?php 
 
-require_once($_SERVER['DOCUMENT_ROOT']."/ecologikal/_config/bootstrap.php");
 
 $member_stream_id=isset($_POST['member_stream_id']) ? $_POST['member_stream_id'] : 0;
 $from_user_id=isset($_POST['from_user_id']) ? $_POST['from_user_id'] : 0;
@@ -64,13 +63,13 @@ if(($command == "post_message") && ($from_user_id == $GEN_USER_ID)){
 	if($f_url)$message=$f_url;
 	$message.=$yt_url;
 
-	$image_path_profile_mini= $GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$from_user_id)."/profile_mini.jpg";
-	$image_url_profile_mini= $GEN_URL_MEMBERS_PICTURES.members_get_info("hash",$from_user_id)."/profile_mini.jpg";
-	if(!file_exists($image_path_profile_mini))$image_url_profile_mini=$GEN_URL_IMAGENES."/avatar_mini.png";
+	$image_path_profile_mini= _MEMBER_PICS_PATH_.members_get_info("hash",$from_user_id)."/profile_mini.jpg";
+	$image_url_profile_mini= _MEMBER_PICS_URL_.members_get_info("hash",$from_user_id)."/profile_mini.jpg";
+	if(!file_exists($image_path_profile_mini))$image_url_profile_mini=_IMAGES_URL_."avatar_mini.png";
 
-	$image_path_profile_mini2= $GEN_PATH_MEMBERS_PICTURES.members_get_info("hash",$from_user_id)."/profile_mini2.jpg";
-	$image_url_profile_mini2=$GEN_URL_MEMBERS_PICTURES.members_get_info("hash",$from_user_id)."/profile_mini2.jpg";
-	if(!file_exists($image_path_profile_mini2))$image_url_profile_mini2=$GEN_URL_IMAGENES."/avatar_mini2.png";
+	$image_path_profile_mini2= _MEMBER_PICS_PATH_.members_get_info("hash",$from_user_id)."/profile_mini2.jpg";
+	$image_url_profile_mini2=_MEMBER_PICS_URL_.members_get_info("hash",$from_user_id)."/profile_mini2.jpg";
+	if(!file_exists($image_path_profile_mini2))$image_url_profile_mini2=_IMAGES_URL_."/avatar_mini2.png";
 	if($rst){
 		$link_remove="";
 		if($member_stream_id){
@@ -84,7 +83,7 @@ if(($command == "post_message") && ($from_user_id == $GEN_USER_ID)){
 						<div class=\"category\"></div>
 					</div>
 					<div class=\"comment_text\">
-						<div id=\"member_link\"><a href=\""._ROOT_URL_."/profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
+						<div id=\"member_link\"><a href=\""._VIEWS_URL_."/member_profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
 						&nbsp;<span id=\"timestamp\"><abbr class=\"timeago\" title=\"".$row['date']."\">".$row['date']."</abbr></span></div>
 						$link_remove
 						".$message."
@@ -108,7 +107,7 @@ if(($command == "post_message") && ($from_user_id == $GEN_USER_ID)){
 			</div><!--avatar-->
 			<div class=\"comment_text\"><!--comment_text-->
 				<div id=\"member_link\">
-					<a href=\""._ROOT_URL_."/profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
+					<a href=\""._VIEWS_URL_."/member_profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
 					<span id=\"timestamp\"><abbr class=\"timeago\" title=\"".$row['date']."\">".$row['date']."</abbr></span>
 				</div><!--member_link-->
 				$link_remove

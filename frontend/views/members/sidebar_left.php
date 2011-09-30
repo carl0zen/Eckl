@@ -80,10 +80,11 @@
 					<?php
 					$user=isset($_GET['user_id']) ? $_GET['user_id'] : $GEN_USER_ID;
 					$user_dir=members_get_info("hash",$user);
-					if(file_exists($GEN_PATH_MEMBERS_PICTURES.$user_dir."/profile.jpg")){?>
-						<img src="<?php echo $GEN_URL_MEMBERS_PICTURES.$user_dir."/profile.jpg";?>">
+					if(file_exists(_MEMBER_PICS_PATH_.$user_dir."/profile.jpg")){?>
+						<img src="<?php echo _MEMBER_PICS_URL_.$user_dir."/profile.jpg";?>">
 					<?php }else{?>
-						<img src="<?php echo _ROOT_URL_."/images/avatar.png";?>">
+						<img src="<?=_IMAGES_URL_?>avatar.png";?>">
+							
 					<?php }?>
 				</profilepic>
 				<fields>
@@ -156,21 +157,10 @@
 		<div id="gallerycontainer" class="container">
 			<div id="title">My Pictures</div>
 			<?php if($GEN_USER_ID && $GEN_USER_ID==$user_id){?>
-			<div id="loadpics" onClick="javascript:$(location).attr('href','<?php echo _ROOT_URL_;?>/profile.php?goto=image-uploader');">Subir Imagenes</div>
+			<div id="loadpics" onClick="javascript:$(location).attr('href','<?php echo _VIEWS_URL_;?>members/member_profile.php?goto=image-uploader');">Subir Imagenes</div>
 			<?php } ?>
 		</div>
-		<div id="gamecontainer" class="container">
-			<div id="title">My Game</div>
-			<div id="containercontent">
-				<div id="gamediv">
-					<div id="reactionpoints">100</div>
-					<div id="actionpoints">100</div>
-					<div id="bc_share_button" class="petalicon"></div><h3>Building</h3>
-					<img src="http://ecologikal.sytes.net/ecologikal/images/game/land_nature/thumbs/1.png">
-					<span id="levelname">Urban Victim</span>
-				</div>
-			</div>
-		</div>
+		
 		<div id="travelscontainer" class="container">
 			<div id="title">My Trips</div>
 		</div>

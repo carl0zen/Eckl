@@ -298,4 +298,13 @@ function skill_get_array($category=""){
 	}
 	return $r;
 }
+function is_logged_in(){
+	$user_id=isset($_GET['user_id']) ? $_GET['user_id'] : $GEN_USER_ID;
+	$no_page=isset($_GET['no_page']) ? $_GET['no_page'] : 0;
+
+	if(isset($_POST['user_id']))$user_id=$_POST['user_id'];
+	if(isset($_POST['no_page']))$no_page=$_POST['no_page'];
+	
+	if($GEN_USER_ID==null){return false;}else{return true;}
+}
 ?>

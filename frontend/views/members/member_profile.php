@@ -4,7 +4,9 @@
 		<div id= "overlay"></div><!-- overlay-->
 		<div id="modalbox">
 			<div id="close"></div>
+			<script src="<?=_JS_URL_?>flower.js" type="text/javascript"></script>
 			<?php include("flower.php");?>
+		
 		</div><!-- modalbox -->
 
 		<content>

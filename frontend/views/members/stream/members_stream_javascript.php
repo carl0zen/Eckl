@@ -1,5 +1,5 @@
-<script src="<?=_JS_URL_?>jquery.timeago/jquery.timeago.js"></script>
-<script src="<?=_JS_URL_?>jquery.timeago/jquery.timeago.es.js"></script>
+<script src="<?=_PLUGINS_URL_?>jquery.timeago/jquery.timeago.js"></script>
+<script src="<?=_PLUGINS_URL_?>jquery.timeago/jquery.timeago.es.js"></script>
 <script>
 	var current_stream_post=randomString();
 
@@ -7,7 +7,7 @@
 		var dataString="command=karma_update&member_stream_id="+id;
 		$.ajax({
 			type: "POST",
-			url: "<?=_VIEWS_URL_?>members/stream/members_post_message.php",
+			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -27,7 +27,7 @@
 			"&rate_value="+v;
 		$.ajax({
 			type: "POST",
-			url: "<?=_VIEWS_URL_?>members/stream/members_post_message.php",
+			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",

@@ -75,7 +75,7 @@ STREAMSTREAM									STREAM
 			-moz-transition:background-color .25s linear;
 			-webkit-transition:background-color .25s linear;
 			transition:background-color .25s linear;
-			background-image:url(images/icons_sprite.png);
+			background-image:url("images/icons_sprite.png");
 		}
 		#stream #postcomment{
 			clear:both;

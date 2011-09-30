@@ -1,4 +1,4 @@
-<?php include_once(_ROOT_URL_"/include/idiomas/"._LANG_."/gen.php");
+<?php include_once(_ROOT_PATH_."/_lang/"._LANG_."/global.php");
 	
 function find_url($text){
 	$reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
