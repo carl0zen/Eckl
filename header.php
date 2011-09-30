@@ -19,19 +19,19 @@
 		
 		<script src="<?=_PLUGINS_URL_?>jquery/jquery-ui-1.8.14.custom.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/jquery.bgiframe.min.js"></script>
-<!--       <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.core.min.js"></script>
+        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.core.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.widget.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.mouse.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.draggable.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.position.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.resizable.min.js"></script> -->
+        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.resizable.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.dialog.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.effects.core.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.accordion.min.js"></script>
- <!--       <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script> -->
+        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.autocomplete.min.js"></script>
-  <!--      <script src="<?=_PLUGINS_URL_?>jquery/ui/jquery.ui.selectmenu.js"></script> -->
+        <script src="<?=_PLUGINS_URL_?>jquery/ui/jquery.ui.selectmenu.js"></script>
         <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.slider.min.js"></script>
         
         <script src="<?=_PLUGINS_URL_?>jquery.livequery/jquery.livequery.js"></script>
@@ -55,7 +55,6 @@
 
         <script> 
 			$(document).ready(function(e){
-				$('')
 				<?php if($goto=="image-uploader"){?>
 					$("rightbar").hide();
 					$("content").addClass("uploader");
