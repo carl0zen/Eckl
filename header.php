@@ -7,43 +7,19 @@
 
 		<?php if (function_exists('load_css_files')){ load_css_files($view);} ?>
 		
-		<?php if (function_exists('load_js_scripts')){ load_js_scripts($view);} ?>
+		<?php if (function_exists('load_js_scripts')){ load_js_scripts($view);$js_loaded=true;} ?>
 
 
         <script> 
 			$(document).ready(function(e){
-				<?php if($goto=="image-uploader"){?>
-					$("rightbar").hide();
-					$("content").addClass("uploader");
-				<?php }?>
-				
-				// INTERACTION
-				// This will handle all the animations and interaction
-
-				
-				// CENTER MODALBOX
-				var thickbox = $('#modalbox');
-				var height = $(window).height();
-				var width = $(document).width();
-			    thickbox.css({
-			        'left' : width/2.5 - (thickbox.width() / 2),  // half width - half element width
-			    });
-				$('#overlay').css('height', height);
-				$('#overlay').click(function(e){
-					$(this).fadeOut(100);
-					$('div#modalbox').fadeOut(100);
-				});
-				$('#close').click(function(e){
-					$('div#modalbox').fadeOut(100);
-					$('#overlay').fadeOut(100);
-				});
-				
 				//TOOLBAR ICONS
 				$('.tiptip').tipTip();
 				$('div.icon#account').click(function(e){
 					$('div.#accountlist').toggle();
 				});
-
+				$('div.icon#account').mouseover(function(e){
+					$('div.#accountlist').toggle();
+				});
 				// SCROLL PANE
 				
 			});
@@ -54,7 +30,9 @@
 						<toolbar>
 							
 							<account>
-								<?php if (is_logged_in()){?>
+								<?php if (is_logged_in()){
+									include(_ROOT_URL_."login/logged_form.php");
+								?>
 								<div class="icon tiptip" id="account" title="My Account"></div>
 								<div class="icon tiptip" id="notifications" title="Notifications">
 									<nomessages>
@@ -74,9 +52,12 @@
 										<li><a  href="#">Log out</a></li>
 									</ul>
 								</div>
-								<?php }else{?>
-									<div id="login" class="icon tiptip" title="Login"></div>
-									<div id="register" class="icon tiptip" title="Register"></div>
+								<?php }else{
+										include_once(_ROOT_URL_."login/login_form.php");
+										?>
+										
+									<div id="login_btn" class="icon tiptip" title="Login"></div>
+									<div id="register_btn" class="icon tiptip" title="Register"></div>
 								<?php }?>
 							</account>
 							

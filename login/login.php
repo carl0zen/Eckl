@@ -1,8 +1,3 @@
-<?php include_once("../inc.php");?>
-<?php require_once($GEN_PATH_SERVIDOR.'/connections/ecologikal.php'); ?>
-<?php include_once($GEN_PATH_SERVIDOR."/include/inc.php"); ?>
-<?php include_once($GEN_PATH_SERVIDOR."/include/funciones.php"); ?>
-<?php require_once($GEN_PATH_SERVIDOR."/include/idiomas/".$GEN_IDIOMA."/members/members.php");?>
 <?php
 if(isset($_POST['login_forma_comando']) && $_POST['login_forma_comando']=="login"){
 	$u=$_POST['login_forma_usuario'];

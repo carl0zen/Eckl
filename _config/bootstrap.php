@@ -73,6 +73,7 @@ $array_goto["image-uploader"]=		array(_ROOT_PATH_,_VIEWS_URL_,"members/image_upl
 $array_goto["sc-image-uploader"]=	array(_ROOT_PATH_,_VIEWS_URL_,"sustcenters/image_uploader/index.php");;
 $array_goto["sc-gallery"]=			array(_ROOT_PATH_,_VIEWS_URL_,"sustcenters/gallery/gallery.php");;
 $array_goto["flower"]=				array(_ROOT_PATH_,_VIEWS_URL_,"members/member_flower.php");;
+$array_goto["game"]=				array(_ROOT_PATH_,_VIEWS_URL_,"members/game.php");;
 
 ?>
 

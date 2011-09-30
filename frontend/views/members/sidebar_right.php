@@ -1,4 +1,4 @@
-<rightbar id="scroll-pane">
+<rightbar>
 	
 		
 		<h3>Friends</h3>

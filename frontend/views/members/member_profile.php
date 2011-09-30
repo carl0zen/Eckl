@@ -1,7 +1,8 @@
 <?php
  	$view = 'member'; // This is for determining which scripts and css are going to be loaded
 	include("../../../header.php");
-	require_once(_VIEWS_PATH_."members/stream/members_stream_javascript.php");?>
+	require_once(_VIEWS_PATH_."members/stream/members_stream_javascript.php");
+?>
 	
 	<div id="wrapper">
 		<?php include ("sidebar_left.php") ?>
@@ -17,4 +18,4 @@
         </content>
  		<?php include("sidebar_right.php"); ?>
  	</div><!--Wrapper-->
-<?php include("footer.php") ?>
+<?php include("../../../footer.php") ?>

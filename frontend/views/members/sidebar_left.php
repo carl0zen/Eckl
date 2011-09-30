@@ -1,58 +1,4 @@
-<script>
-	$(document).ready(function(e){
-		$('#flower_btn').click(function(e){
-				$('menucontents div.container:not(#flowercontainer)').fadeOut(100);
-				$('#flowercontainer').slideDown(200);
-		});
-		$('#profile_btn').click(function(e){
-				$('menucontents div.container:not(#profilecontainer)').fadeOut(100);
-				$('#profilecontainer').slideDown(200);	
-		});
-		$('#stream_btn').click(function(e){
-				$('menucontents div.container:not(#streamcontainer)').fadeOut(100);
-				$('#streamcontainer').slideDown(200);
-		});
-		$('#gallery_btn').click(function(e){
-				$('menucontents div.container:not(#gallerycontainer)').fadeOut(100);
-				$('#gallerycontainer').slideDown(200);
-		});
-		$('#game_btn').click(function(e){
-				$('menucontents div.container:not(#gamecontainer)').fadeOut(100);
-				$('#gamecontainer').slideDown(200);
-		});
-		$('#travels_btn').click(function(e){
-				$('menucontents div.container:not(#travelscontainer)').fadeOut(100);
-				$('#travelscontainer').slideDown(200);
-		});
-		$('#projects_btn').click(function(e){
-				$('menucontents div.container:not(#projectscontainer)').fadeOut(100);
-				$('#projectscontainer').slideDown(200);
-		});
-		$('#events_btn').click(function(e){
-				$('menucontents div.container:not(#eventscontainer)').fadeOut(100);
-				$('#eventscontainer').slideDown(200);
-		});
-		$(window).resize(function(e){
-			originalHeight = $('#scroll-pane').height();
-			height = $(window).height() -50;
-			console.log(height);
-		//	$('#scroll-pane').jScrollPane();
-			$('#scroll-pane').css({
-				'max-height': height -20,
-			});
-		});
-		//SELECT ELEMENTS
-		$("select").change(function () {
-		          $("option:selected").each(function () {
-						if($(this).hasClass('post')) 	{}
-						if($(this).hasClass('review')) 	{$('#review').css('display','block');}
-						if($(this).hasClass('article')) {$('#article').css('display','block');}
-						});
-		        })
-		        .trigger('change');
-		
-	});
-</script>
+<script src="<?=_JS_URL_?>members/sidebar_left.js" type="text/javascript" charset="utf-8"></script>
 <leftbar>
 	
 	<div id="mainmenu">
@@ -60,7 +6,7 @@
 		<div id="flower_btn" class="icon pointer tiptip" title="My Skills" onClick="load_html('content', '<?php echo $array_goto["flower"][1].$array_goto["flower"][2];?>')"></div>
 		<div id="stream_btn" class="icon pointer tiptip" title="My Stream" onClick="load_html('content', '<?php echo $array_goto["stream"][1].$array_goto["stream"][2];?>')"></div>
 		<div id="gallery_btn" class="icon pointer tiptip" title="My Pictures" onClick="load_html('content', '<?php echo $array_goto["gallery"][1].$array_goto["gallery"][2];?>?no_page='+current_gallery_page+'&user_id=<?php echo $user_id;?>')"></div>
-		<div id="game_btn" class="icon pointer tiptip" title="The Game"></div>
+		<div id="game_btn" class="icon pointer tiptip" title="The Game" onClick="load_html('content', '<?php echo $array_goto["game"][1].$array_goto["game"][2];?>')"></div>
 		<div id="travels_btn" class="icon pointer tiptip" title="My Trips"></div>
 		<div id="projects_btn" class="icon pointer tiptip" title="My Projecs"></div>
 		<div id="events_btn" class="icon pointer tiptip" title="My Events"></div>
@@ -159,6 +105,18 @@
 			<?php if($GEN_USER_ID && $GEN_USER_ID==$user_id){?>
 			<div id="loadpics" onClick="javascript:$(location).attr('href','<?php echo _VIEWS_URL_;?>members/member_profile.php?goto=image-uploader');">Subir Imagenes</div>
 			<?php } ?>
+		</div>
+		<div id="gamecontainer" class="container">
+			<div id="title">My Game</div>
+			<div id="containercontent">
+				<div id="gamediv">
+					<div id="reactionpoints">100</div>
+					<div id="actionpoints">100</div>
+					<div id="bc_share_button" class="petalicon"></div><h3>Building</h3>
+					<img src="http://ecologikal.sytes.net/ecologikal/images/game/land_nature/thumbs/1.png">
+					<span id="levelname">Urban Victim</span>
+				</div>
+			</div>
 		</div>
 		
 		<div id="travelscontainer" class="container">

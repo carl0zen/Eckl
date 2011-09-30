@@ -313,17 +313,16 @@ function is_logged_in(){
 /** Function to load JS Scripts on Header Hook Depending
 	@param: $view which determines the view that is being loaded
 **/
-function load_js_scripts($view){
-	
+function load_js_scripts($view,$js_loaded){
+	global $js_loaded;
 /** Unused Scripts:
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.widget.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.mouse.min.js"></script>
-	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.button.min.js"></script>
-	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.draggable.min.js"></script>
+	
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.resizable.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.accordion.min.js"></script>
-	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.button.min.js"></script>
+	
 	<script src="'._PLUGINS_URL_.'jquery/ui/jquery.ui.selectmenu.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.effects.core.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.autocomplete.min.js"></script>
@@ -334,29 +333,36 @@ function load_js_scripts($view){
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.position.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.iframe-transport.js"></script>
 **/
-	echo '<script src="'._PLUGINS_URL_.'jquery/jquery-1.5.1.min.js"></script>
-		<script src="'._PLUGINS_URL_.'jquery/jquery-ui-1.8.14.custom.min.js"></script>
-		<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.core.min.js"></script>
-		<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.dialog.min.js"></script>
-		<script src="'._JS_URL_.'main.js"></script>
-		<script src="'._PLUGINS_URL_.'jquery.tipTip/jquery.tipTip.minified.js"></script>
-		<script src="'._PLUGINS_URL_.'jquery/jquery.bgiframe.min.js"></script>
-		<script src="'._PLUGINS_URL_.'jquery.livequery/jquery.livequery.js"></script>';
-			
+	if (!$js_loaded){
+		echo '<script src="'._PLUGINS_URL_.'jquery/jquery-1.5.1.min.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery/jquery-ui-1.8.14.custom.min.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.core.min.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.dialog.min.js"></script>
+			<script src="'._JS_URL_.'main.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.draggable.min.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery.tipTip/jquery.tipTip.minified.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery/jquery.bgiframe.min.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery.livequery/jquery.livequery.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.button.min.js"></script>';
+		$js_loaded = true;
+	}
+	
 	switch ($view){
 		case 'member':
 			echo '<script src="'._JS_URL_.'members.js"></script>
 				<script src="'._PLUGINS_URL_.'raphael.js"></script>
 				<script src="'._VIEWS_URL_.'members/image_uploader/application.js"></script>
 				<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.fileupload.js"></script>
-				<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.fileupload-ui.js"></script>
-				<script src="'._JS_URL_.'member_flower.js" type="text/javascript"></script>';
+				<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.fileupload-ui.js"></script>';
 			break;
 		case 'sustcenter':
 			break;
 		case 'event':
 			break;	
 		case 'project':
+			break;
+		case 'index':
+			
 			break;		
 	}	
 }
