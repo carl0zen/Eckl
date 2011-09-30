@@ -1,48 +1,5 @@
-
-<script>
-	$(document).ready(function(e){
-			//RATE SKILLS
-			beingrated=false;
-			$('skill').hover(function(e){
-				
-				if (!beingrated){
-					$(this).append('<button class="rateme">Rate Me!</button>').find('button.rateme').click(function(e){
-						beingrated=true;
-						$(this).parent().find('button.rateme').fadeOut(200);
-						$(this).parent().append('<div id="gradeform"><form>How skillful do you think I am <select><option>Not Skillful</option><option>Somewhat Skillful</option><option>Skillful</option><option>Very Skillful</option></select>Leave me a reference:<textarea></textarea><button class="grade">Send Rating</button></form></div>').find('button.grade').click(function(e){
-							//ACCESS TO DATABASE AND UPDATE THE VALUES
-							console.log('Updating Values');
-							$(this).parent().parent().fadeOut();
-							beingrated = false;
-							rated = true;
-						});
-					});
-				} //Being RATED
-				
-			}, function(e){
-				
-				$(this).find('button.rateme').remove();
-			});
-			
-			
-			$('reference').hide();
-
-			$('span#showreferences').click(function(e){
-
-				if ($(this).parent().parent().find('reference').is(":hidden")){
-					$(this).parent().parent().find('reference').fadeIn(200);
-					$(this).html("Hide References");
-				}else{              
-					$(this).parent().parent().find('reference').hide();
-					$(this).html("Show References");
-				}
-			});
-			$('flower div #petalName').click(function(e){
-				$('skill').slideUp(200);
-				$(this).parent().find('skill').slideDown(200);
-			});
-	});
-</script>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php"); ?>
+<script src="<?=_JS_URL_?>flower/member_flower.js" type="text/javascript" charset="utf-8"></script>
 <div class="get">
 	<div class="petal">
 		<span class="text">Building</span>

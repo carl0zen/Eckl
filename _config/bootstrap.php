@@ -6,38 +6,28 @@ define('_LANG_', 'es');
 
 define('_ROOT_PATH_',dirname(dirname(__FILE__)).'/');
 define('_ROOT_URL_', 'http://localhost:8888/github/Eckl/' );
-
 define('_PLUGINS_URL_'  		,_ROOT_URL_.'_plugins/' ); 
 define('_PLUGINS_PATHL_'		,_ROOT_PATH_. '_plugins/' ); 
-                       			
 define('_FRONTEND_URL_'			,_ROOT_URL_.'frontend/');
 define('_FRONTEND_PATH_'		,_ROOT_PATH_. 'frontend/');
-                       			 
 define('_VIEWS_URL_'   			,_FRONTEND_URL_.'views/');
 define('_VIEWS_PATH_'  			,_FRONTEND_PATH_. 'views/');
-                       			 
 define('_JS_URL_'	   			,_FRONTEND_URL_.'js/');
 define('_JS_PATH_'	   			,_FRONTEND_PATH_. 'js/');
-                       			 
 define('_CSS_URL_'	   			,_FRONTEND_URL_.'css/');
 define('_CSS_PATH_'	   			,_FRONTEND_PATH_. 'css/');
-                       			 
 define('_IMAGES_URL_'  			,_CSS_URL_.'images/');
 define('_IMAGES_PATH_' 			,_CSS_PATH_. 'images/');
 
 //Pictures Definition
 define('_PICS_PATH_'			,_ROOT_PATH_.'pictures/');
 define('_PICS_URL_'				,_ROOT_URL_.'pictures/');
-
 define('_MEMBER_PICS_PATH_'		,_PICTURES_PATH_.'/members/');
 define('_MEMBER_PICS_URL_'		,_PICTURES_URL_.'/members/');
-
 define('_SC_PICS_PATH_'			,_PICTURES_PATH_.'/scs/');
 define('_SC_PICS_URL_'			,_PICTURES_URL_.'/scs/');
-
 define('_PROJECTS_PICS_PATH_'	,_PICTURES_PATH_.'/projects/');
 define('_PROJECTS_PICS_URL_'	,_PICTURES_URL_.'/projects/');
-
 define('_EVENTS_PICS_PATH_'		,_PICTURES_PATH_.'/events/');
 define('_EVENTS_PICS_URL_'		,_PICTURES_URL_.'/events/');
 
@@ -58,13 +48,10 @@ $goto="";
 
 //Include Necessary Files
 
-
 require_once(_ROOT_PATH_."_config/session.php");
 require_once(_ROOT_PATH_."_config/dbconnection.php");
-
 include_once(_ROOT_PATH_."backend/functions.php");
 include_once(_ROOT_PATH_."backend/functions_member.php");
-
 require_once(_ROOT_PATH_."_lang/"._LANG_."/members.php");
 require_once(_ROOT_PATH_."_lang/"._LANG_."/global.php");
 
