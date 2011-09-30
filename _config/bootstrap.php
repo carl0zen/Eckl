@@ -1,10 +1,17 @@
 <?php
+
+//Language
+
+define('_LANG_', 'es'); 
+
 // Define Global Variables
 
 define('_ROOT_',dirname(dirname(__FILE__)));
-define('_LANG_', 'es'); 
-define('_HOME_URL_', 'http://localhost:8888/github/Eckl/' );
-define('_PLUGIN_URL_', 'http://localhost:8888/github/Eckl/_plugins/' ); 
+define('_ROOT_URL_', 'http://localhost:8888/github/Eckl/' );
+
+
+define('_PLUGIN_URL_', _ROOT_URL_.'_plugins/' );
+define('_PLUGIN_PATH_', 'http://localhost:8888/github/Eckl/_plugins/' );  
 define('_VIEWS_URL_', 'http://localhost:8888/github/Eckl/frontend/views/');
 define('_VIEWS_PATH_', '/Users/carlospriego/Sites/github/Eckl/frontend/views/');
 define('_JS_URL_', 'http://localhost:8888/github/Eckl/frontend/js/');
@@ -16,10 +23,10 @@ define('_SC_PICS_PATH_',_ROOT_.'/pictures/scs/');
 define('_PROJECTS_PICS_PATH_',_ROOT_.'/pictures/projects/');
 define('_EVENTS_PICS_PATH_',_ROOT_.'/pictures/events/');
 
-define('_MEMBER_PICS_URL_',_HOME_URL_.'/pictures/members/');
-define('_SC_PICS_URL_',_HOME_URL_.'/pictures/scs/');
-define('_PROJECTS_PICS_URL_',_HOME_URL_.'/pictures/projects/');
-define('_EVENTS_PICS_URL_',_HOME_URL_.'/pictures/events/');
+define('_MEMBER_PICS_URL_',_ROOT_URL_.'/pictures/members/');
+define('_SC_PICS_URL_',_ROOT_URL_.'/pictures/scs/');
+define('_PROJECTS_PICS_URL_',_ROOT_URL_.'/pictures/projects/');
+define('_EVENTS_PICS_URL_',_ROOT_URL_.'/pictures/events/');
 
 $GEN_USUARIO=false;
 $GEN_IDIOMA="es";
@@ -31,7 +38,7 @@ $GEN_URL_MEMBERS_PICTURES="http://localhost:8888/github/Eckl/pictures/";
 $GEN_URL_CENTERS_PICTURES="http://localhost:8888/github/Eckl/pictures/sc/";
 
 
-$GEN_URL_IMAGENES=_HOME_URL_ ."/images";
+$GEN_URL_IMAGENES=_ROOT_URL_ ."/images";
 
 $user_id="";
 $goto="";

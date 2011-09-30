@@ -84,7 +84,7 @@ if(($command == "post_message") && ($from_user_id == $GEN_USER_ID)){
 						<div class=\"category\"></div>
 					</div>
 					<div class=\"comment_text\">
-						<div id=\"member_link\"><a href=\""._HOME_URL_."/profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
+						<div id=\"member_link\"><a href=\""._ROOT_URL_."/profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
 						&nbsp;<span id=\"timestamp\"><abbr class=\"timeago\" title=\"".$row['date']."\">".$row['date']."</abbr></span></div>
 						$link_remove
 						".$message."
@@ -108,7 +108,7 @@ if(($command == "post_message") && ($from_user_id == $GEN_USER_ID)){
 			</div><!--avatar-->
 			<div class=\"comment_text\"><!--comment_text-->
 				<div id=\"member_link\">
-					<a href=\""._HOME_URL_."/profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
+					<a href=\""._ROOT_URL_."/profile.php?user_id=".$from_user_id."\">".members_get_info("nombre",$from_user_id) . " " . members_get_info("apellido",$from_user_id)."</a>
 					<span id=\"timestamp\"><abbr class=\"timeago\" title=\"".$row['date']."\">".$row['date']."</abbr></span>
 				</div><!--member_link-->
 				$link_remove

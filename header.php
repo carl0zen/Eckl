@@ -4,12 +4,15 @@
     <head> 
         <meta charset="utf-8" /> 
         <title>Ecologikal</title> 
-        <link rel="stylesheet" href="<?=_HOME_URL_?>frontend/css/global.css" media="screen" />
-		<link rel="stylesheet" href="<?=_HOME_URL_?>frontend/css/stream.css" type="text/css" />        
-        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery/css/jquery.ui.theme.css"  type="text/css" />
-        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery/css/jquery.ui.all.css"  type="text/css" />
-        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery.fileupload/jquery.fileupload-ui.css" />
-
+        <link rel="stylesheet" href="<?=_ROOT_URL_?>frontend/css/global.css" media="screen" />
+		<link rel="stylesheet" href="<?=_ROOT_URL_?>frontend/css/stream.css" type="text/css" />        
+        <link rel="stylesheet" href="<?=_ROOT_URL_?>_plugins/jquery/css/jquery.ui.theme.css"  type="text/css" />
+        <link rel="stylesheet" href="<?=_ROOT_URL_?>_plugins/jquery/css/jquery.ui.all.css"  type="text/css" />
+        <link rel="stylesheet" href="<?=_ROOT_URL_?>_plugins/jquery.fileupload/jquery.fileupload-ui.css" />
+			
+			
+			
+		
 		<script src="<?=_PLUGIN_URL_?>raphael.js"></script>
 
 <!--		<script src="<?=_PLUGIN_URL_?>jquery/jquery-1.5.1.min.js"></script> -->

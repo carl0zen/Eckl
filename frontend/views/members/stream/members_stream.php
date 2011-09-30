@@ -38,7 +38,7 @@ if($user_id=="")$user_id=$GEN_USER_ID;
 			$('div#profile_info').slideUp(400);
 		});
 		
-		load_html("#stream_comments",'<?php echo _HOME_URL_;?>/include/members/stream/members_stream_get_messages.php?user_id=<?php echo $user_id;?>&q='+ 1*new Date());
+		load_html("#stream_comments",'<?php echo _ROOT_URL_;?>/include/members/stream/members_stream_get_messages.php?user_id=<?php echo $user_id;?>&q='+ 1*new Date());
 	});
 </script>
 
