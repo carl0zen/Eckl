@@ -17,7 +17,7 @@ if(isset($_GET['comando']) && $_GET['comando']=="logout"){
 	$GEN_USUARIO=false;
 	$GEN_SC_ID=false;
 	$GEN_USER_ID=false;
-	$url=_ROOT_URL_;
+	$url=_HOME_URL_;
 	header("Location: $url");
 }
 ?>

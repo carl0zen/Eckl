@@ -4,46 +4,46 @@
     <head> 
         <meta charset="utf-8" /> 
         <title>Ecologikal</title> 
-        <link rel="stylesheet" href="<?=_CSS_URL_?>global.css" media="screen" />
-		<link rel="stylesheet" href="<?=_CSS_URL_?>stream.css" type="text/css" />        
-        <link rel="stylesheet" href="<?=_PLUGINS_URL_?>jquery/css/jquery.ui.theme.css"  type="text/css" />
-        <link rel="stylesheet" href="<?=_PLUGINS_URL_?>jquery/css/jquery.ui.all.css"  type="text/css" />
-        <link rel="stylesheet" href="<?=_PLUGINS_URL_?>jquery.fileupload/jquery.fileupload-ui.css" />
+        <link rel="stylesheet" href="<?=_HOME_URL_?>frontend/css/global.css" media="screen" />
+		<link rel="stylesheet" href="<?=_HOME_URL_?>frontend/css/stream.css" type="text/css" />        
+        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery/css/jquery.ui.theme.css"  type="text/css" />
+        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery/css/jquery.ui.all.css"  type="text/css" />
+        <link rel="stylesheet" href="<?=_HOME_URL_?>_plugins/jquery.fileupload/jquery.fileupload-ui.css" />
 
-		<script src="<?=_PLUGINS_URL_?>raphael.js"></script>
+		<script src="<?=_PLUGIN_URL_?>raphael.js"></script>
 
-<!--		<script src="<?=_PLUGINS_URL_?>jquery/jquery-1.5.1.min.js"></script> -->
+<!--		<script src="<?=_PLUGIN_URL_?>jquery/jquery-1.5.1.min.js"></script> -->
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<script src="//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
 		
-		<script src="<?=_PLUGINS_URL_?>jquery/jquery-ui-1.8.14.custom.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/jquery.bgiframe.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.core.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.widget.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.mouse.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.draggable.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.position.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.resizable.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.dialog.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.effects.core.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.accordion.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.autocomplete.min.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/jquery.ui.selectmenu.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery/ui/minified/jquery.ui.slider.min.js"></script>
+		<script src="<?=_PLUGIN_URL_?>jquery/jquery-ui-1.8.14.custom.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/jquery.bgiframe.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.core.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.widget.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.mouse.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.draggable.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.position.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.resizable.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.dialog.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.effects.core.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.accordion.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.button.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.autocomplete.min.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/jquery.ui.selectmenu.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery/ui/minified/jquery.ui.slider.min.js"></script>
         
-        <script src="<?=_PLUGINS_URL_?>jquery.livequery/jquery.livequery.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery.fileupload/jquery.iframe-transport.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery.fileupload/jquery.fileupload.js"></script>
-        <script src="<?=_PLUGINS_URL_?>jquery.fileupload/jquery.fileupload-ui.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery.livequery/jquery.livequery.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery.fileupload/jquery.iframe-transport.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery.fileupload/jquery.fileupload.js"></script>
+        <script src="<?=_PLUGIN_URL_?>jquery.fileupload/jquery.fileupload-ui.js"></script>
         <script src="<?=_VIEWS_URL_?>members/image_uploader/application.js"></script>
 		
         
-		<script src="<?=_PLUGINS_URL_?>jquery.mousewheel.js"></script> 
-		<script src="<?=_PLUGINS_URL_?>jquery.scrollpane/jquery.jscrollpane.min.js"></script>        
-		<script src="<?=_PLUGINS_URL_?>jquery.tipTip/jquery.tipTip.minified.js"></script>
+		<script src="<?=_PLUGIN_URL_?>jquery.mousewheel.js"></script> 
+		<script src="<?=_PLUGIN_URL_?>jquery.scrollpane/jquery.jscrollpane.min.js"></script>        
+		<script src="<?=_PLUGIN_URL_?>jquery.tipTip/jquery.tipTip.minified.js"></script>
 		
 		
 		
