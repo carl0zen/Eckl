@@ -53,37 +53,31 @@ var o = {
 				switch(text){
 					case "Building":
 						$('skill').slideUp(vel);
-						if($('flower div.building skill').is(':hidden'))
-							$('flower div.building skill').slideToggle(vel);
+						$('flower div.building skill').slideDown(vel);
+						console.log("Clicked");
 						break;
 					case "Community Gov":
 						$('skill').slideUp(vel);
-						if($('flower div.communitygov skill').is(':hidden'))
 						$('flower div.communitygov skill').slideDown(vel);
 						break;
 					case "Finance & Economics":
 						$('skill').slideUp(vel);
-						if($('flower div.finance skill').is(':hidden'))
 						$('flower div.finance skill').slideDown(vel);
 						break;
 					case "Land & Nature":
 						$('skill').slideUp(vel);
-						if($('flower div.land skill').is(':hidden'))
 						$('flower div.land skill').slideDown(vel);
 						break;
 					case "Culture & Education":
 						$('skill').slideUp(vel);
-						if($('flower div.culture skill').is(':hidden'))
 						$('flower div.culture skill').slideDown(vel);
 						break;
 					case "Tools & Tech":
 						$('skill').slideUp(vel);
-						if($('flower div.tools skill').is(':hidden'))
 						$('flower div.tools skill').slideDown(vel);
 						break;
 					case "Health & Spirituality":
 						$('skill').slideUp(vel);
-						if($('flower div.health skill').is(':hidden'))
 						$('flower div.health skill').slideDown(vel);
 						break;
 				}
@@ -104,6 +98,7 @@ $(document).ready(function(e){
 					$(this).parent().find('button.rateme').fadeOut(200);
 					$(this).parent().append('<div id="gradeform"><form>How skillful do you think I am <select><option>Not Skillful</option><option>Somewhat Skillful</option><option>Skillful</option><option>Very Skillful</option></select>Leave me a reference:<textarea></textarea><button class="grade">Send Rating</button></form></div>').find('button.grade').click(function(e){
 						//ACCESS TO DATABASE AND UPDATE THE VALUES
+						console.log('Updating Values');
 						$(this).parent().parent().fadeOut();
 						beingrated = false;
 						rated = true;
@@ -130,10 +125,8 @@ $(document).ready(function(e){
 			}
 		});
 		$('flower div #petalName').click(function(e){
-			$('skill').not(this).slideUp(200);
-			if ($(this).parent().find('skill').is(':hidden')){
-				$(this).parent().find('skill').slideToggle(200);
-			}
+			$('skill').slideUp(200);
+			$(this).parent().find('skill').slideDown(200);
 		});
 });
 
