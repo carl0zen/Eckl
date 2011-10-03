@@ -53,8 +53,9 @@
 									</ul>
 								</div>
 								<?php }else{
-										 include(_ROOT_URL_."login/login_form.php");
+										include_once(_ROOT_URL_."login/login_form.php");
 										?>
+										
 									<div id="login_btn" class="icon tiptip" title="Login"></div>
 									<div id="register_btn" class="icon tiptip" title="Register"></div>
 								<?php }?>
