@@ -9,6 +9,21 @@
 		
 		<?php if (function_exists('load_js_scripts')){ load_js_scripts($view);$js_loaded=true;} ?>
 
+
+        <script> 
+			$(document).ready(function(e){
+				//TOOLBAR ICONS
+				$('.tiptip').tipTip();
+				$('div.icon#account').click(function(e){
+					$('div.#accountlist').toggle();
+				});
+				$('div.icon#account').mouseover(function(e){
+					$('div.#accountlist').toggle();
+				});
+				// SCROLL PANE
+				
+			});
+        </script>
     </head> 
 	    <body> 
 			<header>
@@ -16,7 +31,7 @@
 							
 							<account>
 								<?php if (is_logged_in()){
-									include(_ROOT_PATH_."login/logged_form.php");
+									include(_ROOT_URL_."login/logged_form.php");
 								?>
 								<div class="icon tiptip" id="account" title="My Account"></div>
 								<div class="icon tiptip" id="notifications" title="Notifications">
@@ -38,7 +53,7 @@
 									</ul>
 								</div>
 								<?php }else{
-										 include(_ROOT_PATH_."login/login_form.php");
+										 include(_ROOT_URL_."login/login_form.php");
 										?>
 									<div id="login_btn" class="icon tiptip" title="Login"></div>
 									<div id="register_btn" class="icon tiptip" title="Register"></div>
