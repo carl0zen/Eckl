@@ -18,7 +18,7 @@
 .ui-widget { font-family: Lucida Grande, Lucida Sans; font-size: 15px; }
 .ui-widget .ui-widget { font-size: 1em; }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Lucida Grande, Lucida Sans; font-size: 12px;background:#fff;padding:4px; }
-.ui-widget-content { border: 2px solid #dddddd; background: #f9f9f9 50% 50% repeat-x; color: #444444; }
+.ui-widget-content { border: 2px solid #dddddd; background: #ddd 50% 50% repeat-x; color: #444444; }
 .ui-widget-content a { color: #444444; }
 .ui-widget-header {
 	background: #333; /* for non-css3 browsers */

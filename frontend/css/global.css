@@ -31,6 +31,10 @@ header logo {
     width: 180px;
     z-index: 1000;
 }
+
+a:hover{
+	cursor:pointer;
+}
 .nodisplay{
 	display:none;
 }
@@ -167,11 +171,59 @@ span.tooltip{
 	font-size:10px;
 	display:none;
 }
-/*** MENU ***/
-/*** MENU ***/
-/*** MENU ***/
-/*** MENU ***/
-/*** MENU ***/
+.validateTips {
+display:none;
+color:#FFF;
+left:0;
+position:fixed;
+bottom:0;
+width:100%;
+z-index:10000;
+font-size:14px;
+clear:both;
+height:23px;
+line-height:23px;
+text-shadow:1px 1px 1px #555;
+text-indent:25px;
+padding:.3em;
+}
+/**** LOGIN ***/
+#checkboxes{
+	float:left;
+	width:200px;
+}
+#checkboxes label{
+	display:block;
+}
+#login_form {
+
+    font-size: 13px;
+    line-height: 21px;
+    padding: 15px;
+}
+#fields input{
+	width:185px;
+}
+#login_form_remember_session{
+	clear:both;
+}
+#login_form a{
+	float:right;
+	margin-right:5px;
+	font-size:11px;
+	font-weight:normal;
+	text-decoration:underline;
+}
+#login_form input{
+
+	height:15px;
+	font-size:13px;
+	color:#aaa;
+	padding:10px;
+	margin:7px 0;
+	background:#e6e6e6;
+	text-shadow:1px 1px 0 #eee;
+}
 /*** MENU ***/
 #scroll-pane{
 
@@ -297,45 +349,58 @@ div.pageicon {
 	background-position:0 -112px;
 }
 button{
-	background: -moz-linear-gradient(center top , #FEFEFE, #D9D9D9) repeat scroll 0 0 transparent;
-	background: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.13, #FEFEFE),
-	    color-stop(0.57, #D9D9D9)
-	);
-	
-    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
-    border-style: solid;
-    border-width: 1px;
-    color: #888888;
-    font-size: 12px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #ffffff;
+		padding: 7px 20px;
+		background: -moz-linear-gradient(
+			top,
+			#f0f0f0 0%,
+			#e3e3e3 25%,
+			#b5b5b5);
+		background: -webkit-gradient(
+			linear, left top, left bottom, 
+			from(#f0f0f0),
+			color-stop(0.25, #e3e3e3),
+			to(#b5b5b5));
+		border-radius: 0px;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border: 0px solid #d4d4d4;
+		-moz-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.3),
+			inset 0px 0px 0px rgba(255,255,255,0.7);
+		-webkit-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.3),
+			inset 0px 0px 0px rgba(255,255,255,0.7);
+		text-shadow:
+			0px -1px 1px rgba(000,000,000,0.2),
+			0px 1px 0px rgba(255,255,255,0.3);
 }
 button:hover{
-	background: -moz-linear-gradient(center top , #B9B9B9, #FEFEFE) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(
+		top,
+		#f6f6f6 0%,
+		#e9e9e9 25%,
+		#b9b9b9);
 	background: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.13, #B9B9B9),
-	    color-stop(0.57, #FEFEFE)
-	);
+		linear, left top, left bottom, 
+		from(#f6f6f6),
+		color-stop(0.25, #e9e9e9),
+		to(#b9b9b9));
 	cursor:pointer;
 }
 button:active{
-	background: -moz-linear-gradient(center top , #FEFEFE, #B9B9B9) repeat scroll 0 0 transparent;
+	background: -moz-linear-gradient(
+		top,
+		#fbfbfb 0%,
+		#ececec 25%,
+		#bcbcbc);
 	background: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.13, #FEFEFE),
-	    color-stop(0.57, #B9B9B9)
-	);
-	
-	
-	
+		linear, left top, left bottom, 
+		from(#fbfbfb),
+		color-stop(0.25, #ececec),
+		to(#bcbcbc));
 }
 
 #copy {
@@ -616,9 +681,9 @@ border-radius:8px 0 8px 0;
 }
 memberavatar{
 	background:#ccc url("images/avatar_mini2.png");
-	width:30px;
-	height:30px;
-	margin:0 0 10px 10px;
+	width:35px;
+	height:35px;
+	margin:0 0 2px 2px;
 	float:left;
 	border:2px solid #fff;
 	box-shadow: 0 0 2px #111;

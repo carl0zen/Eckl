@@ -343,13 +343,13 @@ function load_js_scripts($view,$js_loaded){
 			<script src="'._PLUGINS_URL_.'jquery.tipTip/jquery.tipTip.minified.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/jquery.bgiframe.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery.livequery/jquery.livequery.js"></script>
-			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.button.min.js"></script>';
+			<script src="'._PLUGINS_URL_.'jquery.watermark.js"></script>';
 		$js_loaded = true;
 	}
 	
 	switch ($view){
 		case 'member':
-			echo '<script src="'._JS_URL_.'members.js"></script>
+			echo '<script src="'._JS_URL_.'members/members.js"></script>
 				<script src="'._PLUGINS_URL_.'raphael.js"></script>
 				<script src="'._VIEWS_URL_.'members/image_uploader/application.js"></script>
 				<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.fileupload.js"></script>

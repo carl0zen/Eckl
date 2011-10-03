@@ -57,6 +57,21 @@ function checkRegexp( o, regexp, n ) {
 		return true;
 	}
 }
+$(document).ready(function(e){
+	//TOOLBAR ICONS
+	$.watermarker.setDefaults({ color: '#ccc'});
+	$('#login_form input').watermark();
+	
+	$('.tiptip').tipTip();
+	$('div.icon#account').click(function(e){
+		$('div.#accountlist').toggle();
+	});
+	$('div.icon#account').mouseover(function(e){
+		$('div.#accountlist').toggle();
+	});
+	// SCROLL PANE
+
+});
 //jQuery(document).ready(function(){
 //	$('#closebutton').click(function(e){
 //		$(this).parent().parent().slideUp(400);
@@ -66,4 +81,3 @@ function checkRegexp( o, regexp, n ) {
 //			return false;
 //		}).next().hide();
 //});
-

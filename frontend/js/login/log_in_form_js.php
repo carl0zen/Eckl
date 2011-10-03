@@ -1,7 +1,8 @@
 <script>
 $(function() {
 	// a workaround for a flaw in the demo system (http://dev.jqueryui.com/ticket/4375), ignore!
-	$( "#dialog:ui-dialog" ).dialog( "destroy" );
+
+	
 	var login_form_user = $( "#login_form_user" ),
 		login_form_password = $( "#login_form_password" ),
 		login_form_remember_session = $( "#login_form_remember_session" ),
