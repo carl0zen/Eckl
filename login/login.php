@@ -18,9 +18,13 @@ if(isset($_POST['login_forma_comando']) && $_POST['login_forma_comando']=="login
 		}else{
 			$m=0;
 		}
-		setcookie("user", $GEN_USUARIO, $m);
-		setcookie("user_id", $GEN_USER_ID ,$m);
-		setcookie("lang", $GEN_IDIOMA, $m);
+		setcookie("GEN_USUARIO", $GEN_USUARIO, $m,"/");
+		setcookie("GEN_USER_ID", $GEN_USER_ID ,$m,"/");
+		setcookie("GEN_IDIOMA", $GEN_IDIOMA, $m,"/");
+		$_SESSION['loggedin'] = true;
+		$_SESSION['user'] = $GEN_USUARIO;
+		$_SESSION['user_id'] = $GEN_USER_ID;
+		$_SESSION['lang'] = $GEN_IDIOMA;
 		$logged = true;
 		echo $logged;
 		user_tracking();

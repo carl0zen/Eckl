@@ -29,7 +29,7 @@
 					if(file_exists(_MEMBER_PICS_PATH_.$user_dir."/profile.jpg")){?>
 						<img src="<?php echo _MEMBER_PICS_URL_.$user_dir."/profile.jpg";?>">
 					<?php }else{?>
-						<img src="<?=_IMAGES_URL_?>avatar.png";?>">
+						<img src="<?=_IMAGES_URL_?>avatar.png";?>
 							
 					<?php }?>
 				</profilepic>

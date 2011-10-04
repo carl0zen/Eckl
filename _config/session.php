@@ -1,4 +1,5 @@
 <?php 
+session_start();
 if(isset($_GET["sc_id"])){
 	$GEN_SC_ID=$_GET["sc_id"];
 	setcookie("GEN_SC_ID", $GEN_SC_ID,0,"/");

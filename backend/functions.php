@@ -302,13 +302,8 @@ function skill_get_array($category=""){
 	Returns true if User is logged in
 	Returns False if user is not logged in **/
 function is_logged_in(){
-	$user_id=isset($_GET['user_id']) ? $_GET['user_id'] : $GEN_USER_ID;
-	$no_page=isset($_GET['no_page']) ? $_GET['no_page'] : 0;
-
-	if(isset($_POST['user_id']))$user_id=$_POST['user_id'];
-	if(isset($_POST['no_page']))$no_page=$_POST['no_page'];
 	
-	if($GEN_USER_ID==null){return false;}else{return true;}
+	if($_SESSION['loggedin']==null){return false;}else{return true;}
 }
 /** Function to load JS Scripts on Header Hook Depending
 	@param: $view which determines the view that is being loaded

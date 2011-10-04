@@ -6,7 +6,6 @@
         <title>Ecologikal</title> 
 
 		<?php if (function_exists('load_css_files')){ load_css_files($view);} ?>
-		
 		<?php if (function_exists('load_js_scripts')){ load_js_scripts($view);$js_loaded=true;} ?>
 
     </head> 
@@ -21,7 +20,7 @@
 								<div class="icon tiptip" id="account" title="My Account"></div>
 								<div class="icon tiptip" id="notifications" title="Notifications">
 									<nomessages>
-										12
+										18
 									</nomessages>
 								</div>
 								<div class="icon tiptip" id="messages" title="My Messages">
