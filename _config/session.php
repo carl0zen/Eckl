@@ -10,15 +10,13 @@ if(isset($_COOKIE["GEN_IDIOMA"]))define('_LANG_',$_COOKIE["GEN_IDIOMA"]);
 if(isset($_COOKIE["GEN_USER_ID"]))$GEN_USER_ID=$_COOKIE["GEN_USER_ID"];
 if(isset($_COOKIE["GEN_SC_ID"]))$GEN_SC_ID=$_COOKIE["GEN_SC_ID"];
 
-if(isset($_GET['comando']) && $_GET['comando']=="logout"){
+if(isset($_GET['command']) && $_GET['command']=="logout"){
 	setcookie("GEN_USUARIO", "",0,"/");
 	setcookie("GEN_USER_ID", "",0,"/");
-	setcookie("GEN_SC_ID", "",0,"/");
 	setcookie("GEN_IDIOMA", "",0,"/");
-	$GEN_USUARIO=false;
-	$GEN_SC_ID=false;
-	$GEN_USER_ID=false;
-	$url=_ROOT_PATH_URL_;
+	session_unset();
+	 session_destroy();
+	$url=_ROOT_URL_;
 	header("Location: $url");
 }
 ?>

@@ -19,13 +19,12 @@
 			
 		</div>
 		<div id="profilecontainer" class="container">
-			<name><?php echo members_get_info("nombre",$user_id)?> <?php echo members_get_info("apellido",$user_id)?> </name>
+			<name><?php echo members_get_info("nombre",$_SESSION['user_id'])?> <?php echo members_get_info("apellido",$_SESSION['user_id'])?> </name>
 			<div id="scroll-pane">
 				
 				<profilepic>
 					<?php
-					$user=isset($_GET['user_id']) ? $_GET['user_id'] : $GEN_USER_ID;
-					$user_dir=members_get_info("hash",$user);
+					$user_dir=members_get_info("hash",$_SESSION['user_id']);
 					if(file_exists(_MEMBER_PICS_PATH_.$user_dir."/profile.jpg")){?>
 						<img src="<?php echo _MEMBER_PICS_URL_.$user_dir."/profile.jpg";?>">
 					<?php }else{?>
@@ -34,11 +33,11 @@
 					<?php }?>
 				</profilepic>
 				<fields>
-					<div id = "email"><div class="icon"></div><?php echo members_get_info("email",$user_id)?></div>
-					<div id = "telephone"><div class="icon"></div><?php echo members_get_info("telefono",$user_id)?></div>
-					<div id = "sex"><div class="icon"></div><?php echo get_word_translation("MEMBER_GENDER",members_get_info("sexo",$user_id))?></div>
-					<div id = "dob"><div class="icon"></div><?php echo members_get_info("medium_dob",$user_id)?></div>
-					<div id = "nationality"><div class="icon"></div><?php echo members_get_info("nationality",$user_id)?></div>
+					<div id = "email"><div class="icon"></div><?php echo members_get_info("email",$_SESSION['user_id'])?></div>
+					<div id = "telephone"><div class="icon"></div><?php echo members_get_info("telefono",$_SESSION['user_id'])?></div>
+					<div id = "sex"><div class="icon"></div><?php echo get_word_translation("MEMBER_GENDER",members_get_info("sexo",$_SESSION['user_id']))?></div>
+					<div id = "dob"><div class="icon"></div><?php echo members_get_info("medium_dob",$_SESSION['user_id'])?></div>
+					<div id = "nationality"><div class="icon"></div><?php echo members_get_info("nationality",$_SESSION['user_id'])?></div>
 					<div id = "languages"><div class="icon"></div>
 						<span id = "language">
 							<span id ="langname">Spanish<level> (Expert)</level></span>

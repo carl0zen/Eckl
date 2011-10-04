@@ -1,5 +1,5 @@
 <?php 	$view = 'index';
 		include_once("header.php"); ?>
 
-This is just a test
+<content>This is the index</content>
 <?php include("footer.php") ?>

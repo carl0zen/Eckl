@@ -14,13 +14,11 @@ if(isset($_POST['login_forma_comando']) && $_POST['login_forma_comando']=="login
 		
 		if($r=="1"){
 			//suma 30 dias a la fecha actual
-			$m = 2592000 + time(); 
-		}else{
-			$m=0;
+			$m = 2592000 + time();
+			setcookie("GEN_USUARIO", $GEN_USUARIO, $m,"/");
+			setcookie("GEN_USER_ID", $GEN_USER_ID ,$m,"/");
+			setcookie("GEN_IDIOMA", $GEN_IDIOMA, $m,"/"); 
 		}
-		setcookie("GEN_USUARIO", $GEN_USUARIO, $m,"/");
-		setcookie("GEN_USER_ID", $GEN_USER_ID ,$m,"/");
-		setcookie("GEN_IDIOMA", $GEN_IDIOMA, $m,"/");
 		$_SESSION['loggedin'] = true;
 		$_SESSION['user'] = $GEN_USUARIO;
 		$_SESSION['user_id'] = $GEN_USER_ID;

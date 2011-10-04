@@ -55,11 +55,11 @@ include_once(_ROOT_PATH_."backend/functions_member.php");
 require_once(_ROOT_PATH_."_lang/"._LANG_."/members.php");
 require_once(_ROOT_PATH_."_lang/"._LANG_."/global.php");
 
-//Redirects if user is not logged in
-
-//if(!is_logged_in()){header('Location: '._ROOT_URL_.'index.php');exit;}
-
-
+//Redirects to index if user is not logged in
+$url = get_url();
+if ($url!="index.php"){
+//	if(!is_logged_in()){header('Location: '._ROOT_URL_.'login.php');exit;}
+}
 //Load HTML Functionality for Main Menu
 
 

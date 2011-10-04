@@ -302,8 +302,7 @@ function skill_get_array($category=""){
 	Returns true if User is logged in
 	Returns False if user is not logged in **/
 function is_logged_in(){
-	
-	if($_SESSION['loggedin']==null){return false;}else{return true;}
+	if($_SESSION['loggedin']==true){return true;}else{return false;}
 }
 /** Function to load JS Scripts on Header Hook Depending
 	@param: $view which determines the view that is being loaded
@@ -380,5 +379,11 @@ function load_css_files($view){
 		case 'project':
 			break;
 	}
+}
+//Get current file name
+function get_url(){
+	$filename = $_SERVER['PHP_SELF'];
+	$parts = Explode('/', $filename);
+	return $parts[count($parts) - 1];
 }
 ?>

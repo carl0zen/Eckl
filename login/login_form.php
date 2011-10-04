@@ -1,5 +1,5 @@
 <?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php");?>
-    <div id="login_form" title="Login">
+    <div id="login_form" title="Login" >
 
 		<div id="fields">
         	<input type="text" name="login_form_user" id="login_form_user"  class="text ui-widget-content ui-corner-all" title="Type in username/email" />

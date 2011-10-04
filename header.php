@@ -33,7 +33,7 @@
 									<ul>
 										<li><a  href="<?=_VIEWS_URL_?>members/member_profile.php">Profile</a></li>
 										<li><a  href="#">Settings</a></li>
-										<li><a  href="#">Log out</a></li>
+										<li><a  href="?command=logout">Log out</a></li>
 									</ul>
 								</div>
 								<?php }else{
