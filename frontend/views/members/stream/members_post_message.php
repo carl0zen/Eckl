@@ -1,5 +1,6 @@
-<?php 
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php"); ?>
 
+<?php 
 
 $member_stream_id=isset($_POST['member_stream_id']) ? $_POST['member_stream_id'] : 0;
 $from_user_id=isset($_POST['from_user_id']) ? $_POST['from_user_id'] : 0;
@@ -8,8 +9,9 @@ $category_id=isset($_POST['category_id']) ? $_POST['category_id'] : 0;
 $message=isset($_POST['message']) ? $_POST['message'] : "";
 $rate_value=isset($_POST['rate_value']) ? $_POST['rate_value'] : 0;
 $hash=isset($_POST['hash']) ? $_POST['hash'] : "";
-
 $command=isset($_POST['command']) ? $_POST['command'] : "";
+
+
 if(!$GEN_USER_ID){echo "not logged";exit;}
 
 if( $command == "karma_update" && $GEN_USER_ID && $member_stream_id){

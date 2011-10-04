@@ -1,8 +1,9 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/ecologikal/_config/config.php");?>
-<script type="text/javascript" src="<?php echo _HOME_URL_;?>/embed/jquery.oembed.1.1.0/jquery.oembed.js"></script>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php"); ?>
 
-<script src="<?php echo _HOME_URL_?>/js/jquery.timeago/jquery.timeago.js"></script>
-<script src="<?php echo _HOME_URL_?>/js/jquery.timeago/jquery.timeago.es.js"></script>
+<script type="text/javascript" src="<?php echo _PLUGINS_URL_;?>jquery.oembed/jquery.oembed.js"></script>
+
+<script src="<?php echo _JS_URL_?>jquery.timeago/jquery.timeago.js"></script>
+<script src="<?php echo _JS_URL_?>jquery.timeago/jquery.timeago.es.js"></script>
 
 <script type="text/javascript"> 
 	$(function() {
@@ -147,11 +148,11 @@
                         </div>
                         <div id="rated"  <?php if(!(int)$row_sub_comments['rated']){?> style="display:none"<?php }?> onclick="javascript:rate_message(<?php echo $row_sub_comments['members_stream_id']?>,0)">Unrate</div>
                     	<div id="karma"><?php echo (int)$row_sub_comments['useful']?> Dharma <?php echo (int)$row_sub_comments['unuseful']?> Karma </div>
-						<div class="avatar"><a href="<?php echo _HOME_URL_."/profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><img src="<?php echo $image_url_profile_mini;?>"></a>
+						<div class="avatar"><a href="<?php echo _VIEWS_URL_."members/member_profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><img src="<?php echo $image_url_profile_mini;?>"></a>
 							<div class="category"></div>
 						</div>
 						<div class="comment_text">
-							<div id="member_link"><a href="<?php echo _HOME_URL_."/profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><?php echo members_get_info("nombre",$row_sub_comments['from_user_id']) . " " . members_get_info("apellido",$row_sub_comments['from_user_id'])?></a>
+							<div id="member_link"><a href="<?php echo _VIEWS_URL_."members/member_profile.php?user_id=".$row_sub_comments['from_user_id'];?>"><?php echo members_get_info("nombre",$row_sub_comments['from_user_id']) . " " . members_get_info("apellido",$row_sub_comments['from_user_id'])?></a>
 							&nbsp;<span id="timestamp"><abbr class="timeago" title="<?php echo $row_sub_comments['date2']?>"><?php echo $row_sub_comments['date2']?></abbr></span></div>
 							 <?php if($row_sub_comments['from_user_id']==$GEN_USER_ID or $row_sub_comments['from_user_id']==$GEN_USER_ID or $row_sub_comments['to_user_id']==$GEN_USER_ID){?>
 							<div id="remove" onclick="javascript:remove_comment(<?php echo $row_sub_comments['members_stream_id']?>,'comment_<?php echo $row_sub_comments['members_stream_id']?>');" ><span class="ui-icon ui-icon-closethick" ></span></div>

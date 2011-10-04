@@ -1,3 +1,5 @@
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php"); ?>
+
 <script src="<?=_PLUGINS_URL_?>jquery.timeago/jquery.timeago.js"></script>
 <script src="<?=_PLUGINS_URL_?>jquery.timeago/jquery.timeago.es.js"></script>
 <script>
@@ -7,7 +9,7 @@
 		var dataString="command=karma_update&member_stream_id="+id;
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?=_VIEWS_URL_?>members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -27,7 +29,7 @@
 			"&rate_value="+v;
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?=_VIEWS_URL_?>members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -52,7 +54,7 @@
 		var dataString=param;
 		$.ajax({	
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_stream_get_messages.php",
+			url: "<?=_VIEWS_URL_?>members/stream/members_stream_get_messages.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -70,7 +72,7 @@
 			"&command=get_sub_comments";
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_stream_get_sub_comments.php",
+			url: "<?=_VIEWS_URL_?>members/stream/members_stream_get_sub_comments.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -87,7 +89,7 @@
 			"&command=remove_message";
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?=_VIEWS_URL_?>members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -134,7 +136,7 @@
 			"&hash="+current_stream_post;
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?=_VIEWS_URL_?>members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",
@@ -175,7 +177,7 @@
 			//console.log(dataString);
 		$.ajax({
 			type: "POST",
-			url: "<?php echo _ROOT_URL_?>/include/members/stream/members_post_message.php",
+			url: "<?=_VIEWS_URL_?>members/stream/members_post_message.php",
 			contentType: "application/x-www-form-urlencoded;charset=ISO-8859-15",
 			data: dataString,
 			dataType: "html",

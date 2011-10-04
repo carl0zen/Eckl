@@ -1,4 +1,11 @@
 <?php
+// Turn on Error Reporting (Development environment´);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// ALlow include() function to use URLs instead of paths
+
+
 // Language
 
 define('_LANG_', 'es'); 
@@ -22,14 +29,14 @@ define('_IMAGES_PATH_' 			,_CSS_PATH_. 'images/');
 //Pictures Definition
 define('_PICS_PATH_'			,_ROOT_PATH_.'pictures/');
 define('_PICS_URL_'				,_ROOT_URL_.'pictures/');
-define('_MEMBER_PICS_PATH_'		,_PICTURES_PATH_.'/members/');
-define('_MEMBER_PICS_URL_'		,_PICTURES_URL_.'/members/');
-define('_SC_PICS_PATH_'			,_PICTURES_PATH_.'/scs/');
-define('_SC_PICS_URL_'			,_PICTURES_URL_.'/scs/');
-define('_PROJECTS_PICS_PATH_'	,_PICTURES_PATH_.'/projects/');
-define('_PROJECTS_PICS_URL_'	,_PICTURES_URL_.'/projects/');
-define('_EVENTS_PICS_PATH_'		,_PICTURES_PATH_.'/events/');
-define('_EVENTS_PICS_URL_'		,_PICTURES_URL_.'/events/');
+define('_MEMBER_PICS_PATH_'		,_PICS_PATH_.'/members/');
+define('_MEMBER_PICS_URL_'		,_PICS_URL_.'/members/');
+define('_SC_PICS_PATH_'			,_PICS_PATH_.'/scs/');
+define('_SC_PICS_URL_'			,_PICS_URL_.'/scs/');
+define('_PROJECTS_PICS_PATH_'	,_PICS_PATH_.'/projects/');
+define('_PROJECTS_PICS_URL_'	,_PICS_URL_.'/projects/');
+define('_EVENTS_PICS_PATH_'		,_PICS_PATH_.'/events/');
+define('_EVENTS_PICS_URL_'		,_PICS_URL_.'/events/');
 
 $GEN_USUARIO=false;
 $GEN_IDIOMA="es";
@@ -62,18 +69,16 @@ if ($url!="index.php"){
 }
 //Load HTML Functionality for Main Menu
 
-
-
 $user_id=isset($_GET['user_id']) ? $_GET['user_id'] : $GEN_USER_ID;
 $goto=isset($_GET['goto']) ? $_GET['goto'] : "stream";
-$array_goto["gallery"]=				array(_ROOT_PATH_,_VIEWS_URL_,"members/gallery/gallery.php");;
-$array_goto["stream"]=				array(_ROOT_PATH_,_VIEWS_URL_,"members/stream/members_stream.php");;
-$array_goto["profile"]=				array(_ROOT_PATH_,_VIEWS_URL_,"members/profile.php");;
-$array_goto["image-uploader"]=		array(_ROOT_PATH_,_VIEWS_URL_,"members/image_uploader/index.php");;
-$array_goto["sc-image-uploader"]=	array(_ROOT_PATH_,_VIEWS_URL_,"sustcenters/image_uploader/index.php");;
-$array_goto["sc-gallery"]=			array(_ROOT_PATH_,_VIEWS_URL_,"sustcenters/gallery/gallery.php");;
-$array_goto["flower"]=				array(_ROOT_PATH_,_VIEWS_URL_,"members/member_flower.php");;
-$array_goto["game"]=				array(_ROOT_PATH_,_VIEWS_URL_,"members/game.php");;
+$array_goto["gallery"]=				array(_VIEWS_PATH_,_VIEWS_URL_,"members/gallery/gallery.php");;
+$array_goto["stream"]=				array(_VIEWS_PATH_,_VIEWS_URL_,"members/stream/members_stream.php");;
+$array_goto["profile"]=				array(_VIEWS_PATH_,_VIEWS_URL_,"members/profile.php");;
+$array_goto["image-uploader"]=		array(_VIEWS_PATH_,_VIEWS_URL_,"members/image_uploader/index.php");;
+$array_goto["sc-image-uploader"]=	array(_VIEWS_PATH_,_VIEWS_URL_,"sustcenters/image_uploader/index.php");;
+$array_goto["sc-gallery"]=			array(_VIEWS_PATH_,_VIEWS_URL_,"sustcenters/gallery/gallery.php");;
+$array_goto["flower"]=				array(_VIEWS_PATH_,_VIEWS_URL_,"members/member_flower.php");;
+$array_goto["game"]=				array(_VIEWS_PATH_,_VIEWS_URL_,"members/game/game.php");;
 
 ?>
 

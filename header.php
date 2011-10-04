@@ -14,9 +14,7 @@
 						<toolbar>
 							
 							<account>
-								<?php if (is_logged_in()){
-									include(_ROOT_PATH_."login/logged_form.php");
-								?>
+								<?php if (is_logged_in()){?>
 								<div class="icon tiptip" id="account" title="My Account"></div>
 								<div class="icon tiptip" id="notifications" title="Notifications">
 									<nomessages>

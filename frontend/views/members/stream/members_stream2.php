@@ -1,4 +1,5 @@
 <?php 
+
 	require_once($_SERVER['DOCUMENT_ROOT']."/ecologikal/_config/config.php");
 	$user_id=isset($_GET['user_id']) ? $_GET['user_id'] : "";
 	if($user_id=="")$user_id=$GEN_USER_ID;

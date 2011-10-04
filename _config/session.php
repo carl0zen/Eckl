@@ -10,6 +10,7 @@ if(isset($_COOKIE["GEN_IDIOMA"]))define('_LANG_',$_COOKIE["GEN_IDIOMA"]);
 if(isset($_COOKIE["GEN_USER_ID"]))$GEN_USER_ID=$_COOKIE["GEN_USER_ID"];
 if(isset($_COOKIE["GEN_SC_ID"]))$GEN_SC_ID=$_COOKIE["GEN_SC_ID"];
 
+
 if(isset($_GET['command']) && $_GET['command']=="logout"){
 	setcookie("GEN_USUARIO", "",0,"/");
 	setcookie("GEN_USER_ID", "",0,"/");

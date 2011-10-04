@@ -302,12 +302,19 @@ function skill_get_array($category=""){
 	Returns true if User is logged in
 	Returns False if user is not logged in **/
 function is_logged_in(){
-	if($_SESSION['loggedin']==true){return true;}else{return false;}
+	if(isset($_SESSION['loggedin'])){
+		$loggedin = $_SESSION['loggedin'];
+		if ($loggedin){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
 /** Function to load JS Scripts on Header Hook Depending
 	@param: $view which determines the view that is being loaded
 **/
-function load_js_scripts($view,$js_loaded){
+function load_js_scripts($view){
 	global $js_loaded;
 /** Unused Scripts:
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>

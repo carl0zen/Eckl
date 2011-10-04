@@ -23,6 +23,13 @@ if(isset($_POST['login_forma_comando']) && $_POST['login_forma_comando']=="login
 		$_SESSION['user'] = $GEN_USUARIO;
 		$_SESSION['user_id'] = $GEN_USER_ID;
 		$_SESSION['lang'] = $GEN_IDIOMA;
+		
+		global $username, $user_id, $lang;
+		
+		$username = $_SESSION['user'];
+		$user_id = $_SESSION['user_id'];
+		$lang = $_SESSION['lang'];
+		
 		$logged = true;
 		echo $logged;
 		user_tracking();
