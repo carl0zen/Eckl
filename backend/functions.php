@@ -383,10 +383,11 @@ function load_css_files($view){
 			break;
 		case 'event':
 			break;	
-		case 'project':
+		case 'index':
+			echo '<link rel="stylesheet" href="'._CSS_URL_.'index.css" type="text/css" />';
 			break;
 		case 'game':
-		echo '<link rel="stylesheet" href="'._CSS_URL_.'game.css" type="text/css" />';
+			echo '<link rel="stylesheet" href="'._CSS_URL_.'game.css" type="text/css" />';
 			break;
 	}
 }

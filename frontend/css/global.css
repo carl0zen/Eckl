@@ -5,6 +5,64 @@
       #ffff33
       #ff9933
       #ff3333 **/
+	@font-face {
+	    font-family: 'SoftCompoundRegular';
+	    src: url('fonts/soft_compound-webfont.eot');
+	    src: url('fonts/soft_compound-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/soft_compound-webfont.woff') format('woff'),
+	         url('fonts/soft_compound-webfont.ttf') format('truetype'),
+	         url('fonts/soft_compound-webfont.svg#SoftCompoundRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+	@font-face {
+	    font-family: 'AllerRegular';
+	    src: url('fonts/aller_rg-webfont.eot');
+	    src: url('fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/aller_rg-webfont.woff') format('woff'),
+	         url('fonts/aller_rg-webfont.ttf') format('truetype'),
+	         url('fonts/aller_rg-webfont.svg#AllerRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+	@font-face {
+	    font-family: 'AllerLightRegular';
+	    src: url('fonts/aller_lt-webfont.eot');
+	    src: url('fonts/aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/aller_lt-webfont.woff') format('woff'),
+	         url('fonts/aller_lt-webfont.ttf') format('truetype'),
+	         url('fonts/aller_lt-webfont.svg#AllerLightRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+	@font-face {
+	    font-family: 'AllerDisplayRegular';
+	    src: url('fonts/allerdisplay-webfont.eot');
+	    src: url('fonts/allerdisplay-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/allerdisplay-webfont.woff') format('woff'),
+	         url('fonts/allerdisplay-webfont.ttf') format('truetype'),
+	         url('fonts/allerdisplay-webfont.svg#AllerDisplayRegular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+	@font-face {
+	    font-family: 'AllerLightItalic';
+	    src: url('fonts/aller_ltit-webfont.eot');
+	    src: url('fonts/aller_ltit-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/aller_ltit-webfont.woff') format('woff'),
+	         url('fonts/aller_ltit-webfont.ttf') format('truetype'),
+	         url('fonts/aller_ltit-webfont.svg#AllerLightItalic') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
 body {
     background: #333;
     color: #fff;
@@ -18,7 +76,8 @@ header {
     margin: 0;
     padding: 7px 0 0;
     position: fixed;
-    width: 313px;
+    width: 313px;	
+	top:0;
 }
 header logo {
     background: #333 url("images/logoheader.png") no-repeat scroll 0 0 transparent;
@@ -44,7 +103,7 @@ toolbar{
 }
 toolbar div.icon {
     background: url("images/iconsmenu.png") repeat scroll -165px -2px transparent;
-    float: left;
+    float: right;
     height: 32px;
     margin: 2px 4px;
     overflow: hidden;
@@ -103,6 +162,9 @@ toolbar #messages{
 toolbar #share{
 	background-position:-165px -40px;
 }
+
+
+
 /** NOTIFICATIONS **/
 nomessages {
     background: none repeat scroll 0 0 #EC2487;
@@ -122,6 +184,7 @@ account {
     left: 1004px;
     position: fixed;
     top: 4px;
+    width: 154px;
     z-index: 1008;
 }
 a {
@@ -135,6 +198,7 @@ color:#2794ff;
 a:visited{
 	color:#27A6DE;
 }
+
 #wrapper{
 	width:1070px;
 	clear:both;
@@ -377,6 +441,32 @@ button{
 		text-shadow:
 			0px -1px 1px rgba(000,000,000,0.2),
 			0px 1px 0px rgba(255,255,255,0.3);
+}
+button.green{
+	background: #A7E300;
+	background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));
+	background: -moz-linear-gradient(top, #A7E300, #99D100);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');
+	border: 1px solid #87B800;
+	color: white;
+	cursor: pointer;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 30px;
+	padding: 0 10px;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, .25) 0 -1px 1px;
+	text-transform: uppercase;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+button.green:hover{
+	 background: -moz-linear-gradient(center top , #B2EB14, #A4DA14) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, from(#B2EB14), to(#A4DA14));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B2EB14', endColorstr='#A4DA14');
+
 }
 button:hover{
 	background: -moz-linear-gradient(

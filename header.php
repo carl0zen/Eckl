@@ -9,7 +9,7 @@
 		<?php if (function_exists('load_js_scripts')){ load_js_scripts($view);$js_loaded=true;} ?>
 
     </head> 
-	    <body> 
+	    <body>
 			<header>
 						<toolbar>
 							
@@ -38,7 +38,6 @@
 										 include(_ROOT_PATH_."login/login_form.php");
 										?>
 									<div id="login_btn" class="icon tiptip" title="Login"></div>
-									<div id="register_btn" class="icon tiptip" title="Register"></div>
 								<?php }?>
 							</account>
 							

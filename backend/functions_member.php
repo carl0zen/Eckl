@@ -20,9 +20,6 @@ function find_url($text){
 	}
 
 }
-
-
-
 function get_youtube_videos($string) {
 
     $ids = array();
