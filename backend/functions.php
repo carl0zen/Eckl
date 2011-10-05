@@ -371,7 +371,7 @@ function load_js_scripts($view){
 	@param: $view which determines the view that is being loaded
 **/
 function load_css_files($view){
-	echo '	<link rel="stylesheet" href="'._CSS_URL_.'global.css" media="screen" />
+			echo '	<link rel="stylesheet" href="'._CSS_URL_.'global.css" media="screen" />
 			<link rel="stylesheet" href="'._CSS_URL_.'stream.css" type="text/css" />        
     		<link rel="stylesheet" href="'._PLUGINS_URL_.'jquery/css/jquery.ui.theme.css"  type="text/css" />
     		<link rel="stylesheet" href="'._PLUGINS_URL_.'jquery/css/jquery.ui.all.css"  type="text/css" />
@@ -384,6 +384,9 @@ function load_css_files($view){
 		case 'event':
 			break;	
 		case 'project':
+			break;
+		case 'game':
+		echo '<link rel="stylesheet" href="'._CSS_URL_.'game.css" type="text/css" />';
 			break;
 	}
 }

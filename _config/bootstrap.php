@@ -80,5 +80,16 @@ $array_goto["sc-gallery"]=			array(_VIEWS_PATH_,_VIEWS_URL_,"sustcenters/gallery
 $array_goto["flower"]=				array(_VIEWS_PATH_,_VIEWS_URL_,"members/member_flower.php");;
 $array_goto["game"]=				array(_VIEWS_PATH_,_VIEWS_URL_,"members/game/game.php");;
 
+//Petal Name Array
+$petal_name[1] = 'Building';
+$petal_name[2] = 'Community Gov';
+$petal_name[3] = 'Finance & Economics';
+$petal_name[4] = 'Land & Nature';
+$petal_name[5] = 'Culture & Education';
+$petal_name[6] = 'Tools & Technology';
+$petal_name[7] = 'Health & Spirituality';
+
+
+
 ?>
 

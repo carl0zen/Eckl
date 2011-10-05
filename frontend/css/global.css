@@ -1,5 +1,5 @@
-/**@red = "#cc3399";
-@orange:#6633cc
+/**	  #cc3399
+	  #6633cc
       #33cccc
       #99ff33
       #ffff33
@@ -795,7 +795,7 @@ refgrade{
 }
 leftbar {
     float: left;
-
+	position:fixed;
     width: 330px;
     z-index: 1000;
 }
