@@ -25,16 +25,6 @@ index h2.play{
     position: absolute;
     width: 320px;
 }
-index h2.kins{
-	-webkit-transform: rotate(-5deg); 
-	-moz-transform: rotate(-5deg);
-	transform:rotate(-5deg);
-	    margin-left: -30px;
-	    margin-top: 471px;
-	    position: absolute;
-	    text-align: center;
-	    width: 290px;
-	}
 index mainquote{
 	font-size:27px;
 	font-family: 'AllerLightRegular';
@@ -42,29 +32,12 @@ index mainquote{
 	font-weight:bold;
     
 }
-index gamequote {
-    display: block;
-    margin-left: 300px;
-    position: absolute;
-    top: 641px;
-    width: 460px;
-}
-arrow1 {
-    background: url("images/flechas.png") repeat scroll 0 0 transparent;
-    display: block;
-    height: 240px;
-    margin-left: 363px;
-    position: absolute;
-    top: 380px;
-    width: 360px;
-}
-arrow2 {
-    background: url("images/flechas.png") repeat scroll 0 333px transparent;
-    display: block;
-    height: 284px;
-    position: absolute;
-    top: 775px;
-    width: 360px;
+index gamequote{
+	display:block;
+	width:400px;
+	margin-left:300px;
+	position:absolute;
+	top:500px;
 }
 logoindex {
     background: url("images/logo.png") repeat scroll 0 0 transparent;

@@ -56,11 +56,8 @@
 					<h1>Travel, Live, Be and Play...</h1>
 					<mainquote>Travel to amazing and natural destinations. Live the Ecologikal experience while making a positive impact in the environment and your everyday life.</mainquote>
 					<button class="green">JOIN US</button>
-					<h2 class="kins">Pay with Kins</h2>
 					
 					<h2 class="play">Play the game</h2>
-					<arrow1></arrow1>
-					<arrow2></arrow2>
 					<gamequote> With Ecologikal you can develop your skills while sharing <strong>useful</strong> info, traveling as <strong>volunteer</strong> or ecotourist to <a href="#" class="tiptip" title="Click to learn what are these?">Sustainable centers</a>. Each action adds up in <strong>ecopoints</strong>
 					</gamequote>
 
