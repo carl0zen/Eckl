@@ -360,10 +360,12 @@ function load_js_scripts($view){
 			break;
 		case 'event':
 			break;	
-		case 'project':
+		case 'game':
+			echo '<script src="'._JS_URL_.'game.js"></script>
+				<script src="'._PLUGINS_URL_.'jquery.blackandwhite.js"></script>';
 			break;
 		case 'index':
-			
+			echo '<script src="'._JS_URL_.'index.js"></script>';
 			break;		
 	}	
 }

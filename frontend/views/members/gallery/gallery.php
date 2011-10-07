@@ -56,7 +56,7 @@ $rst = mysql_query($sql, $ecologikal);
 	/* jQuery lightBox plugin - Gallery style */
 	
 	#gallery #picture{
-		background:url(<?=_IMAGES_URL_?>ajax-loader.gif) no-repeat center;
+		background:url("images/ajax-loader.gif") no-repeat center;
 		width:78px;
 		height:59px;
 		overflow:hidden;
