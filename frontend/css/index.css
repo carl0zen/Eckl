@@ -5,10 +5,6 @@ index{
 	display:block;
 	
 }
-headerindex {
-position: absolute;
-top: 17px;
-}
 index h1, index h2{
 	font-family: 'SoftCompoundRegular';
     font-weight:normal;
@@ -51,7 +47,7 @@ logoindex {
 }
 search{
 	display:block;
-
+	margin-left:695px;
 }
 search input#search{
 	float:right;

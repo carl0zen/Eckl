@@ -63,23 +63,6 @@
 	    font-style: normal;
 
 	}
-
-html,body{
-	height:100%;
-	margin:0;
-}
-background{
-	top:0;
-	background:url('images/bg.png');
-	position:fixed;
-	width:100%;
-	display:block;
-	height:100px;
-	z-index:-1;
-	min-height: 100%; /* Sets the height of the background always to 100% */
-	height: auto !important; /* real browsers */
-	height: 100%; /* IE6: treated as min-height*/
-}	
 body {
     background: #333;
     color: #fff;
