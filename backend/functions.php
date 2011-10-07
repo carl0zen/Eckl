@@ -363,7 +363,7 @@ function load_js_scripts($view){
 		case 'project':
 			break;
 		case 'index':
-			
+			echo '<script src="'._JS_URL_.'index.js"></script>';
 			break;		
 	}	
 }
