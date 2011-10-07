@@ -1,11 +1,9 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php"); 
-	$view = 'game';
-	load_js_scripts($view);
-	load_css_files($view);
-?>
+<?php require_once($_SERVER['DOCUMENT_ROOT']."/github/Eckl/_config/bootstrap.php"); ?>
 <game>
 <h1>Play the Game! </h1>
 <link rel="stylesheet" href="<?=_CSS_URL_?>game.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<script src="<?=_JS_URL_?>game.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?=_PLUGINS_URL_?>jquery.blackandwhite.js" type="text/javascript" charset="utf-8"></script>
 
 <div id="titles">
 	<div class="title">Comment</div>

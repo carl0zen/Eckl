@@ -90,9 +90,7 @@ header logo {
     width: 180px;
     z-index: 1000;
 }
-strong{
-	font-weight:bold;
-}
+
 a:hover{
 	cursor:pointer;
 }
@@ -135,7 +133,6 @@ toolbar #accountlist ul li{
 	line-height:24px;
 	
 }
-
 toolbar #search_btn {
     background-color: #333333;
     background-position: -165px -41px;

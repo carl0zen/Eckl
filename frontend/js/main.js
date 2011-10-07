@@ -15,7 +15,7 @@ function randomString() {
 
 function load_html( target, url){
 	var content;
-	$(target).append("<div id='loader'><img src='<?= _IMAGES_URL_?>ajax-loader.gif'> Cargando...</div>");
+	$(target).append("<div id='loader'><img src='/ecologikal/images/ajax-loader.gif'> Cargando...</div>");
 	$.get(url, function(data){
 		$(target).html("");
 		$(target).html(data);
