@@ -1,9 +1,5 @@
- <script> 
+
 		$(document).ready(function(e){
-			<?php if($goto=="image-uploader"){?>
-				$("rightbar").hide();
-				$("content").addClass("uploader");
-			<?php }?>
 			
 			// INTERACTION
 			// This will handle all the animations and interaction
@@ -29,6 +25,6 @@
 			$('div.icon#account').click(function(e){
 				$('div.#accountlist').toggle();
 			});
+
 			
 		});
-</script>

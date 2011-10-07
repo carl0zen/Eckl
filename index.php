@@ -10,8 +10,11 @@
 
     </head> 
 	    <body>
+		<background>
+			
+		</background>
 		<div id="wrapperindex">
-			<header>
+			<headerindex>
 						<toolbar>
 							
 							<accountindex>
@@ -39,17 +42,17 @@
 										 include(_ROOT_PATH_."login/login_form.php");
 										?>
 									<div id="login_btn" class="icon tiptip" title="Login"></div>
-
+									<search>
+										<div class="icon" id="search_btn"></div>
+										<input id="search" type="text">
+									</search>
 								<?php }?>
 							</accountindex>
-							<search>
-								<div class="icon" id="search_btn"></div>
-								<input id="search" type="text">
-							</search>
+							
 
 						</toolbar>
 						<logoindex></logoindex>
-			</header>
+			</headerindex>
 
 			<index>
 	
