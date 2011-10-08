@@ -70,7 +70,7 @@ $(document).ready(function(e){
 		$('div.#accountlist').toggle();
 	});
 	// SCROLL PANE
-
+	
 });
 //jQuery(document).ready(function(){
 //	$('#closebutton').click(function(e){
