@@ -42,9 +42,11 @@
 										 include(_ROOT_PATH_."login/login_form.php");
 										?>
 									<div id="login_btn" class="icon tiptip" title="Login"></div>
-									
+									<search>
+										<div class="icon" id="search_btn"></div>
+										<input id="search" type="text">
+									</search>
 								<?php }?>
-
 							</accountindex>
 							
 
@@ -55,57 +57,12 @@
 			<index>
 	
 					<h1>Travel, Live, Be and Play...</h1>
-					<mainsection>
-						<mainquote>Travel to amazing and natural destinations. Live the Ecologikal experience while making a positive impact in the environment and your everyday life.</mainquote>
-						<button class="green">JOIN US</button>
-					</mainsection>
-					<gamesection>
-						<videoimage></video>
-						<h2 class="play">Play the game</h2>
-						<gamequote> With Ecologikal you can develop your skills while sharing <strong>useful</strong> info, traveling as <strong>volunteer</strong> or ecotourist to <a href="#" class="tiptip" title="Click to learn what are these?">Sustainable centers</a>. Each action adds up in <strong>ecopoints</strong></gamequote>
-						<arrow1></arrow1>
-					</gamesection>
-					<kinsection>
-						<kin></kin>
-						<h2 class="kins">Kins Exchange</h2>
-						<kinsquote>
-							With your <strong>ecopoints</strong> you can enjoy lots of benefits that other members are willing to exchange for
-						</kinsquote>
-						<arrow2></arrow2>
-					</kinsection>
-					<travelsection>
-						<mapimage></map>
-						<arrow3></arrow3>
-					</travelsection>
-					<testimonials>
-									<h2>-Testimonials-</h2>
-									<testimonial>
-										<picture>
-											<img src="<?php echo _IMAGES_URL_.'testimonial1.png'?>"></img>
-										</picture>
-										<description>
-											"I wanted to feel rooted again and feel my connection with nature"
-											<author>Tim Schneider, Professional Artist (Germany)</author>
-										</description>
-									</testimonial>
-									<testimonial>
-										<picture>
-											<img src="<?php echo _IMAGES_URL_.'testimonial2.png'?>"></img>
-										</picture>
-										<description>
-										"I wish I had knew about ecovillages before! There is so much to learn!"
-											<author>Minnie (Canada)</author>
-										</description>
-									</testimonial>
-									<testimonial>
-										<picture>
-											<img src="<?php echo _IMAGES_URL_.'testimonial3.png'?>"></img>
-										</picture>
-										<description>
-					"As soon as I left home and started traveling, I realized the best place to grow and learn is out there, in nature and in community."						<author>Enrico, (Italy)</author>
-										</description>
-									</testimonial>
-					</testimonials>
+					<mainquote>Travel to amazing and natural destinations. Live the Ecologikal experience while making a positive impact in the environment and your everyday life.</mainquote>
+					<button class="green">JOIN US</button>
+					
+					<h2 class="play">Play the game</h2>
+					<gamequote> With Ecologikal you can develop your skills while sharing <strong>useful</strong> info, traveling as <strong>volunteer</strong> or ecotourist to <a href="#" class="tiptip" title="Click to learn what are these?">Sustainable centers</a>. Each action adds up in <strong>ecopoints</strong>
+					</gamequote>
 
 			</index>
 		</div><!--Wrapper Index -->

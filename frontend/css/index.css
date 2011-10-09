@@ -1,76 +1,13 @@
 index{
-	width:770px;
+	width:700px;
 	margin:auto;
 	clear:both;
 	display:block;
-	font-family:'AllerLightRegular';
-	text-shadow:rgba(0, 0, 0, 1) 0 -2px -2px;
+	
 }
-maincontent{
-	display:block;
-	width:100%;
-	height:925px;
-
-}
-testimonials{
-	display:block;
-	width:100%;
-	font-size:14px;
-	top:1000px;
-	position:relative;
-}
-testimonial{
-	width:31%;
-	float:left;
-	margin-left:10px;
-}
-testimonial picture{
-	display:block;
-	width:70px;
-	height:68px;
-	border:5px solid #fff;
-	float:left;
-	margin:0 10px 10px 0px;
-	box-shadow:0 0 8px #000;
-	-webkit-box-shadow:0 0 8px #000;
-	-moz-box-shadow:0 0 8px #000;
-}
-testimonial description{
-	text-align:left;
-	margin:7px;
-	font-style:italic;
-}
-testimonial author{
-	font-style:normal;
-	font-size:11px;
-	float:right;
-	clear:both;
-	line-height:16px;
-
-	background:#444;
-	padding:7px;
-	text-align:right;
-	text-shadow:none;
-	width:100px;
-}
-headerindex{
-    color: #FFFFFF;
-    height: 41px;
-    margin: 0;
-    padding: 7px 0 0;
-    position: absolute;
-    width: 313px;	
-	top:0;
-}
-logoindex {
-    -moz-transform: rotate(-5deg);
-	-webkit-transform: rotate(-5deg);
-	transform: rotate(-5deg);
-    background: url("images/logo.png") repeat scroll 0 0 transparent;
-    display: block;
-    height: 63px;
-    margin-left: -24px;
-    width: 307px;
+headerindex {
+position: absolute;
+top: 17px;
 }
 index h1, index h2{
 	font-family: 'SoftCompoundRegular';
@@ -92,16 +29,6 @@ index h2.play{
     position: absolute;
     width: 320px;
 }
-index h2.kins{
-	-webkit-transform: rotate(-5deg); 
-	-moz-transform: rotate(-5deg);
-	transform:rotate(-5deg);
-
-	    margin-top: 392px;
-		position: absolute;
-		text-align: center;
-		width: 290px;
-	}
 index mainquote{
 	font-size:27px;
 	font-family: 'AllerLightRegular';
@@ -109,51 +36,36 @@ index mainquote{
 	font-weight:bold;
     
 }
-index gamequote {
-    display: block;
-    margin-left: 300px;
-    position: absolute;
-    top: 641px;
-    width: 460px;
+index gamequote{
+	display:block;
+	width:400px;
+	margin-left:300px;
+	position:absolute;
+	top:500px;
 }
+logoindex {
+    background: url("images/logo.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 63px;
+    width: 307px;
+}
+search{
+	display:block;
 
-index kinsquote{
-	display: block;
-    position: absolute;
-    top: 900px;
-    width: 300px;
-	margin-left:30px;
 }
-arrow1 {
-    background: url("images/arrow2.png");
-    display: block;
-    height: 193px;
-    position: absolute;
-    top: 380px;
-    width: 582px;
+search input#search{
+	float:right;
+	position:relative;
+	top:0;
 }
-arrow2 {
-    background: url("images/arrow1.png");
-    display: block;
-	height: 262px;
-	position: absolute;
-	top: 734px;
-	width: 384px;
-	margin-left: 199px;
-}
-arrow3 {
-    background: url("images/arrow3.png");
-    display: block;
-	height: 264px;
-	position: absolute;
-
-	width: 309px;
-	margin-left: 199px;
+search #search_btn{
+	margin:0;
+	margin-left:10px;
 }
 #wrapperindex{
 	width:870px;
 	clear:both;
-	margin:100px auto;
+	margin:80px auto;
 }
 
 accountindex {
@@ -169,7 +81,7 @@ index button.green{
 	text-transform:none;
 	font-size:33px;
 	padding:20px 30px;
-	margin:20px;
+	margin:10px;
 	float:right;
 	border-radius:15px;
 }
