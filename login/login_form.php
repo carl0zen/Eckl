@@ -27,7 +27,7 @@ $(function() {
 		tips = $( "#validateTips_login" ),
 		allFields = $( [] ).add( login_form_user ).add( login_form_password).add( tips);
 		
-	$( "#login_form" ).dialog({autoOpen: false, modal: false, width:240, draggable: true, 
+	$( "#login_form" ).dialog({autoOpen: false, modal: true, width:240, draggable: true, 
 		resizable: false, dialogClass: 'dialogo_editar_perfil',
 		buttons: {
 			"Login": function() {
