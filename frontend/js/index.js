@@ -24,8 +24,4 @@ $(document).ready(function(e){
 			$('div.icon#account').click(function(e){
 				$('div.#accountlist').toggle();
 			});
-	
-			$('videimage').click(function(e){
-				
-			});
 });

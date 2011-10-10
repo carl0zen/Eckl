@@ -16,7 +16,6 @@ function randomString() {
 function load_html( target, url){
 	var content;
 	$(target).append("<div id='loader'><img src='/ecologikal/images/ajax-loader.gif'> Cargando...</div>");
-	$('content').fadeOut(200);
 	$.get(url, function(data){
 		$(target).html("");
 		$(target).html(data);
@@ -70,8 +69,6 @@ $(document).ready(function(e){
 	$('div.icon#account').mouseover(function(e){
 		$('div.#accountlist').toggle();
 	});
-	// Black and White wrapper effect
-
 	// SCROLL PANE
 	
 });

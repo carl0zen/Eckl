@@ -6,22 +6,6 @@ index{
 	font-family:'AllerLightRegular';
 	text-shadow:rgba(0, 0, 0, 1) 0 -2px -2px;
 }
-strong{
-	font-weight:bold;
-}
-#free{
-	font-size:13px;
-	position:absolute;
-	top:-20px;
-	right:-20px;#dc0077
-	font-family:'SoftCompoundRegular';
-	background:#DC0077;
-	text-transform:uppercase;
-	padding:3px 12px;
-	-webkit-transform:rotate(15deg);
-	box-shadow:0 0 8px #000;
-}
-
 maincontent{
 	display:block;
 	width:100%;
@@ -59,18 +43,19 @@ testimonial description{
 	text-align:left;
 	margin:7px;
 	font-style:italic;
-	font-size:12px;
 }
 testimonial author{
-
-	font-size:12px;
+	font-style:normal;
+	font-size:11px;
+	float:right;
 	clear:both;
-	top:40px;
-	left:0;
+	line-height:16px;
+
+	background:#444;
+	padding:7px;
 	text-align:right;
+	text-shadow:none;
 	width:100px;
-	font-size:10px;
-	color:#444;
 }
 headerindex{
     color: #FFFFFF;
@@ -107,7 +92,7 @@ index h2.play {
 	-moz-transform: rotate(5deg);
 	transform: rotate(5deg);
 	margin-left: 470px;
-	top: 325px;
+	margin-top: 94px;
 	position: absolute;
 	width: 320px;
 }
@@ -224,11 +209,11 @@ index button.green{
 	position:absolute;
 	border-radius:15px;
 }
-travelquote {
-display: block;
-width: 418px;
-position: absolute;
-top: 1300px;
+travelquote{
+	display:block;
+	width:460px;
+	position:absolute;
+	top:1320px;
 }
 travelsection h2 {
 position: absolute;
@@ -238,18 +223,4 @@ width: 350px;
 -webkit-transform: rotate(-4deg);
 -moz-transform: rotate(-4deg);
 transform: rotate(-4deg);
-}
-footerindex{
-	display:block;
-	width:850px;
-	height:200px;
-	background:#000;
-	position:absolute;
-	top:1600px;
-}
-
-/** FOR PLUGINS **/
-.blackandwhite{ /** Sets the color of the wrapper blackandwhite **/
-	position:relative;
-	display:block;
 }
