@@ -57,10 +57,10 @@
 					<h1>Travel, Live, Be and Play...</h1>
 					<mainsection>
 						<mainquote>Travel to amazing and natural destinations. Live the Ecologikal experience while making a positive impact in the environment and your everyday life.</mainquote>
-						<button class="green">JOIN US</button>
+						<button class="green">JOIN US <span id="free">for free</span></button>
 					</mainsection>
 					<gamesection>
-						<videoimage></video>
+						<videoimage ><a href="#" class="blackandwhite"><img src="<?=_IMAGES_URL_?>videoimage.png"></a></videoimage>
 						<h2 class="play">Play the game</h2>
 						<gamequote> With Ecologikal you can develop your skills while sharing <strong>useful</strong> info, traveling as <strong>volunteer</strong> or ecotourist to <a href="#" class="tiptip" title="Click to learn what are these?">Sustainable centers</a>. Each action adds up in <strong>ecopoints</strong></gamequote>
 						<arrow1></arrow1>
@@ -75,7 +75,7 @@
 					</kinsection>
 					<travelsection>
 						<h2>Exchange your kins</h2>
-						<travelquote>More kins = more traveling benefits, you can use your kins as an <a href="#">alternative currency</a></travelquote>
+						<travelquote>More kins = more traveling benefits, you can use your kins as an <a href="#">alternative currency</a> to pay for discounts in workshops, accomodation, transportation and many more. Everyone can travel with <strong>Ecologikal</strong></travelquote>
 						<mapimage></map>
 						<arrow3></arrow3>
 					</travelsection>
@@ -87,7 +87,7 @@
 										</picture>
 										<description>
 											"I wanted to feel rooted again and feel my connection with nature"
-											<author>Tim Schneider, Professional Artist (Germany)</author>
+											<author>Tim Schneider (Germany)</author>
 										</description>
 									</testimonial>
 									<testimonial>
@@ -110,5 +110,6 @@
 					</testimonials>
 
 			</index>
+			<footerindex></footerindex>
 		</div><!--Wrapper Index -->
 <?php include("footer.php") ?>
