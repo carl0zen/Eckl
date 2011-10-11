@@ -6,6 +6,27 @@ index{
 	font-family:'AllerLightRegular';
 	text-shadow:rgba(0, 0, 0, 1) 0 -2px -2px;
 }
+<<<<<<< HEAD
+=======
+strong{
+	font-weight:bold;
+}
+#free{
+	font-size:13px; 
+	position:absolute;
+	top:-20px;
+	right:-20px;
+	font-family:'SoftCompoundRegular'; 
+	background:#DC0077;
+	text-transform:uppercase;
+	padding:3px 12px;
+	-webkit-transform:rotate(15deg); 
+	-moz-transform:rotate(15deg); 
+	transform:rotate(15deg); 
+	box-shadow:0 0 8px #000;
+}
+
+>>>>>>> blackandwhite
 maincontent{
 	display:block;
 	width:100%;
@@ -182,9 +203,9 @@ background: url("images/arrow3.png");
 display: block;
 height: 264px;
 position: absolute;
-top: 150px;
+top: 1083px;
 width: 308px;
-margin-left: 370px;
+margin-left: 403px;
 }
 #wrapperindex{
 	width:870px;
@@ -223,4 +244,29 @@ width: 350px;
 -webkit-transform: rotate(-4deg);
 -moz-transform: rotate(-4deg);
 transform: rotate(-4deg);
+<<<<<<< HEAD
+=======
+}
+footerindex{
+	display:block;
+	width:850px;
+	height:200px;
+	background:#000;
+	position:absolute;
+	top:1600px;
+}
+overlay{
+	background:rgba(0,0,0,.8);
+	width:100%;
+	position:fixed;
+	height:200px;
+	top:0;
+	z-index:1000;
+	display:none;
+}
+/** FOR PLUGINS **/
+.bwWrapper{ /** Sets the color of the wrapper blackandwhite **/
+	position:relative;
+	display:block;
+>>>>>>> blackandwhite
 }

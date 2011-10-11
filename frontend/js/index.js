@@ -24,4 +24,28 @@ $(document).ready(function(e){
 			$('div.icon#account').click(function(e){
 				$('div.#accountlist').toggle();
 			});
+<<<<<<< HEAD
+=======
+		$('.bwWrapper').BlackAndWhite();
+			
+	/**			
+			$('videoimage').hover(function(e){
+		
+				$('index :not(videoimage)').animate({ 'opacity': 0.3},200);
+			}, function(e){
+				$('overlay').fadeOut(200);
+				$('index :not(videoimage)').animate({ 'opacity': 1},200);
+			});
+			$('kinimage').hover(function(e){
+				$('index :not(kinimage img)').animate({ 'opacity': 0.1},200);
+			}, function(e){
+				$('index :not(kinimage img)').animate({ 'opacity': 1},200);
+			});
+			
+			$('mapimage').hover(function(e){
+				$('index :not(mapimage)').animate({ 'opacity': 0.3},200);
+			}, function(e){
+				$('index :not(mapimage)').animate({ 'opacity': 1},200);
+			});  **/
+>>>>>>> blackandwhite
 });

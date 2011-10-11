@@ -317,7 +317,7 @@ function is_logged_in(){
 function load_js_scripts($view){
 	global $js_loaded;
 /** Unused Scripts:
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="'._PLUGINS_URL_.'jquery/jquery-1.5.1.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.widget.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.mouse.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/jquery-1.5.1.min.js"></script>
@@ -335,8 +335,12 @@ function load_js_scripts($view){
 	<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.iframe-transport.js"></script>
 **/
 	if (!$js_loaded){
+<<<<<<< HEAD
 		echo '<script src="'._PLUGINS_URL_.'jquery/jquery-1.6.1.min.js"></script>
 			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+=======
+		echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+>>>>>>> blackandwhite
 			<script src="'._PLUGINS_URL_.'jquery/jquery-ui-1.8.14.custom.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.core.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.dialog.min.js"></script>
@@ -345,7 +349,8 @@ function load_js_scripts($view){
 			<script src="'._PLUGINS_URL_.'jquery.tipTip/jquery.tipTip.minified.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/jquery.bgiframe.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery.livequery/jquery.livequery.js"></script>
-			<script src="'._PLUGINS_URL_.'jquery.watermark.js"></script>';
+			<script src="'._PLUGINS_URL_.'jquery.watermark.js"></script>
+			<script src="'._PLUGINS_URL_.'jquery.blackandwhite.js"></script>';
 		$js_loaded = true;
 	}
 	
@@ -369,6 +374,10 @@ function load_js_scripts($view){
 			break;
 		case 'index':
 			echo '<script src="'._JS_URL_.'index.js"></script>';
+<<<<<<< HEAD
+=======
+				
+>>>>>>> blackandwhite
 			break;		
 	}	
 }
