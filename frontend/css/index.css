@@ -16,9 +16,8 @@ strong{
 	position:absolute;
 	top:-20px;
 	right:-20px;
-	font-family:'SoftCompoundRegular'; 
+
 	background:#DC0077;
-	text-transform:uppercase;
 	padding:3px 12px;
 	-webkit-transform:rotate(15deg); 
 	-moz-transform:rotate(15deg); 
