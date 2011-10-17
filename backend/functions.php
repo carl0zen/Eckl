@@ -320,7 +320,7 @@ function load_js_scripts($view){
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.widget.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.mouse.min.js"></script>
-	
+	<script src="'._PLUGINS_URL_.'jquery/jquery-1.5.1.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.resizable.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.accordion.min.js"></script>
 	
@@ -335,7 +335,10 @@ function load_js_scripts($view){
 	<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.iframe-transport.js"></script>
 **/
 	if (!$js_loaded){
-		echo '<script src="'._PLUGINS_URL_.'jquery/jquery-1.5.1.min.js"></script>
+		echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.easing-1.4.pack.js"></script>
+			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/jquery-ui-1.8.14.custom.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.core.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.dialog.min.js"></script>
@@ -358,9 +361,13 @@ function load_js_scripts($view){
 			break;
 		case 'sustcenter':
 			break;
-		case 'event':
+		case 'game':
+			echo '<script src="'._JS_URL_.'game.js" type="text/javascript" charset="utf-8"></script>
+				<script src="'._PLUGINS_URL_.'jquery.isotope/jquery.isotope.min.js" type="text/javascript" charset="utf-8"></script>';
 			break;	
-		case 'project':
+		case 'maingame':
+			echo '<script src="'._JS_URL_.'maingame.js" type="text/javascript" charset="utf-8"></script>
+				<script src="'._PLUGINS_URL_.'jquery.isotope/jquery.isotope.min.js" type="text/javascript" charset="utf-8"></script>';
 			break;
 		case 'index':
 			echo '<script src="'._JS_URL_.'index.js"></script>';
@@ -375,13 +382,15 @@ function load_css_files($view){
 			<link rel="stylesheet" href="'._CSS_URL_.'stream.css" type="text/css" />        
     		<link rel="stylesheet" href="'._PLUGINS_URL_.'jquery/css/jquery.ui.theme.css"  type="text/css" />
     		<link rel="stylesheet" href="'._PLUGINS_URL_.'jquery/css/jquery.ui.all.css"  type="text/css" />
-    		<link rel="stylesheet" href="'._PLUGINS_URL_.'jquery.fileupload/jquery.fileupload-ui.css" type="text/css" />';
+    		<link rel="stylesheet" href="'._PLUGINS_URL_.'jquery.fileupload/jquery.fileupload-ui.css" type="text/css" />
+			<link rel="stylesheet" href="'._PLUGINS_URL_.'fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />';
 	switch ($view){
 		case 'member':
 			break;
 		case 'sustcenter':
 			break;
-		case 'event':
+		case 'maingame':
+			echo '<link rel="stylesheet" href="'._CSS_URL_.'maingame.css" type="text/css" />';
 			break;	
 		case 'index':
 			echo '<link rel="stylesheet" href="'._CSS_URL_.'index.css" type="text/css" />';

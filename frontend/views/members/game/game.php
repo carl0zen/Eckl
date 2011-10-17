@@ -2,8 +2,36 @@
 <game>
 <h1>Play the Game! </h1>
 <link rel="stylesheet" href="<?=_CSS_URL_?>game.css" type="text/css" media="screen" title="no title" charset="utf-8">
-<script src="<?=_JS_URL_?>game.js" type="text/javascript" charset="utf-8"></script>
-<script src="<?=_PLUGINS_URL_?>jquery.blackandwhite.js" type="text/javascript" charset="utf-8"></script>
+
+<?php $view = 'game'; load_js_scripts($view); 
+
+	$profiles = array(
+						array('Name' => 'Isaac Garza', 'ProfilePic' => _IMAGES_URL_.'profilepics/1.png'),
+						array('Name' => 'Tiago Ruprecht', 'ProfilePic' => _IMAGES_URL_.'profilepics/2.png'),
+						array('Name' => 'Sergio García', 'ProfilePic' => _IMAGES_URL_.'profilepics/3.png'),
+						array('Name' => 'Pauline Schaeffer', 'ProfilePic' => _IMAGES_URL_.'profilepics/4.png'),
+						array('Name' => 'Pau Cz', 'ProfilePic' => _IMAGES_URL_.'profilepics/5.png'),
+						array('Name' => 'Diego Muñoz', 'ProfilePic' => _IMAGES_URL_.'profilepics/6.png'),
+						array('Name' => 'Karla Rubiano', 'ProfilePic' => _IMAGES_URL_.'profilepics/7.png'),
+						array('Name' => 'Emi Gonzalez', 'ProfilePic' => _IMAGES_URL_.'profilepics/8.png'),
+						array('Name' => 'Diego García', 'ProfilePic' => _IMAGES_URL_.'profilepics/9.png'),
+						array('Name' => 'Arliz Gutierrez', 'ProfilePic' => _IMAGES_URL_.'profilepics/10.png'),
+						array('Name' => 'Jesus de Anda', 'ProfilePic' => _IMAGES_URL_.'profilepics/11.png'),
+						array('Name' => 'Aline García', 'ProfilePic' => _IMAGES_URL_.'profilepics/12.png'),
+						array('Name' => 'Andrea Scheel', 'ProfilePic' => _IMAGES_URL_.'profilepics/13.png'),
+						array('Name' => 'Federico Halsband', 'ProfilePic' => _IMAGES_URL_.'profilepics/14.png'),
+						array('Name' => 'Felix Collado', 'ProfilePic' => _IMAGES_URL_.'profilepics/15.png'),
+						array('Name' => 'Carlos Mundalah', 'ProfilePic' => _IMAGES_URL_.'profilepics/16.png'),
+						array('Name' => 'Gaby Ork', 'ProfilePic' => _IMAGES_URL_.'profilepics/17.png'),
+						array('Name' => 'Alex Patiño', 'ProfilePic' => _IMAGES_URL_.'profilepics/18.png'),
+						array('Name' => 'Vivians Glicanti', 'ProfilePic' => _IMAGES_URL_.'profilepics/19.png'),
+						array('Name' => 'Xavier Padilla', 'ProfilePic' => _IMAGES_URL_.'profilepics/20.png'),
+						array('Name' => 'Carlos Pérez', 'ProfilePic' => _IMAGES_URL_.'profilepics/21.png'),
+						);
+						
+					$size = 20;
+	?>
+
 
 <div id="titles">
 	<div class="title">Comment</div>
@@ -21,69 +49,60 @@
 
 <div id="petal<?php echo $x; ?>">
 	
-	<div id="bw comment" class="square">
-		<img src="<?php echo _PICS_URL_."members/".members_get_info("hash",$x)."/profile.jpg"?>">
-		<span class="karma">100</span>
-		<span class="points">200</span>
+	<div id="comment" class="square">
+		<span class="bwWrapper"><img src="<?php  $random = rand(0,$size);
+						echo $profiles[$random]['ProfilePic']; ?>"></span>
 		<div class="squareinfo">
-			<span id="points">+3</span>
-			<a href="#">Write a comment</a>
+			<span id="points">+<?php echo rand(0,2000)?> kins</span>
+			<a href="#"><?php echo $profiles[$random]['Name']; ?></a>
 		</div>
 	</div>
 	<div id="article" class="square">
-		<img src="<?php echo _PICS_URL_."members/".members_get_info("hash",$x)."/profile.jpg"?>">
-		<span class="karma">100</span>
-		<span class="points">200</span>
+		<span class="bwWrapper"><img src="<?php  $random = rand(0,$size);
+						echo $profiles[$random]['ProfilePic']; ?>"></span>
 		<div class="squareinfo">
-			<span id="points">+10</span>
-			<a href="#">Write an article</a>
-		</div>	
+			<span id="points">+<?php echo rand(0,2000)?> kins</span>
+			<a href="#"><?php echo $profiles[$random]['Name']; ?></a>
+		</div>
 	</div>
 	<div id="event" class="square">
-		<img src="<?php echo _PICS_URL_."members/".members_get_info("hash",$x)."/profile.jpg"?>">
-		<span class="karma">100</span>
-		<span class="points">200</span>
+		<span class="bwWrapper"><img src="<?php  $random = rand(0,$size);
+						echo $profiles[$random]['ProfilePic']; ?>"></span>
 		<div class="squareinfo">
-			<span id="points">+7</span>
-			<a href="#">Attend</a>
-			<span id="points">+100</span>
-			<a href="#">Create</a>
+			<span id="points">+<?php echo rand(0,2000)?> kins</span>
+			<a href="#"><?php echo $profiles[$random]['Name']; ?></a>
 		</div>
 	</div>
 	<div id="workshop" class="square">
-		<img src="<?php echo _PICS_URL_."members/".members_get_info("hash",$x)."/profile.jpg"?>">
-		<span class="karma">100</span>
-		<span class="points">200</span>
+		<span class="bwWrapper"><img src="<?php  $random = rand(0,$size);
+						echo $profiles[$random]['ProfilePic']; ?>"></span>
 		<div class="squareinfo">
-			<span id="points">+50</span>
-			<a href="#">Find a Workshop</a>
+			<span id="points">+<?php echo rand(0,2000)?> kins</span>
+			<a href="#"><?php echo $profiles[$random]['Name']; ?></a>
 		</div>
 	</div>
 	<div id="ecotrip" class="square">
-		<img src="<?php echo _PICS_URL_."members/".members_get_info("hash",$x)."/profile.jpg"?>">
-		<span class="karma">100</span>
-		<span class="points">200</span>
+		<span class="bwWrapper"><img src="<?php  $random = rand(0,$size);
+						echo $profiles[$random]['ProfilePic']; ?>"></span>
 		<div class="squareinfo">
-			<span id="points">+10</span>
-			<a href="#">Travel to a S.C.</a>
+			<span id="points">+<?php echo rand(0,2000)?> kins</span>
+			<a href="#"><?php echo $profiles[$random]['Name']; ?></a>
 		</div>
 	</div>
 	<div id="volunteer" class="square">
-		<img src="<?php echo _PICS_URL_."members/".members_get_info("hash",$x)."/profile.jpg"?>">
-		<span class="karma">100</span>
-		<span class="points">200</span>
+		<span class="bwWrapper"><img src="<?php  $random = rand(0,$size);
+						echo $profiles[$random]['ProfilePic']; ?>"></span>
 		<div class="squareinfo">
-			<span id="points">+10</span>
-			<a href="#">Volunteer in a S.C.</a>
+			<span id="points">+<?php echo rand(0,2000)?> kins</span>
+			<a href="#"><?php echo $profiles[$random]['Name']; ?></a>
 		</div>
 	</div>
 	<div id="project" class="square">
-		<img src="<?php echo _PICS_URL_."members/".members_get_info("hash",$x)."/profile.jpg"?>">
-		<span class="karma">100</span>
-		<span class="points">200</span>
+		<span class="bwWrapper"><img src="<?php  $random = rand(0,$size);
+						echo $profiles[$random]['ProfilePic']; ?>"></span>
 		<div class="squareinfo">
-			<span id="points">+10</span>
-			<a href="#">Start a Project</a>
+			<span id="points">+<?php echo rand(0,2000)?> kins</span>
+			<a href="#"><?php echo $profiles[$random]['Name']; ?></a>
 		</div>
 	</div>
 </div>

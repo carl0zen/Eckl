@@ -215,7 +215,9 @@ color:#2794ff;
 a:visited{
 	color:#27A6DE;
 }
-
+.hidden{
+	display:none;
+}
 #wrapper{
 	width:1070px;
 	clear:both;
@@ -401,6 +403,9 @@ content {
     position: relative;
 	z-index:1000;
     width: 656px;
+}
+content.fullwidth{
+	width:820px;
 }
 content.uploader{
 	width:700px;
@@ -795,11 +800,12 @@ memberavatar{
 	float:left;
 	border:2px solid #fff;
 	box-shadow: 0 0 2px #111;
+	overflow:hidden;
 }
 creator memberavatar{
 	position:absolute;
 }
-memberavatar:hover membernametooltip{
+div.element:hover membernametooltip{
 	display:block;
 }
 membernametooltip{
