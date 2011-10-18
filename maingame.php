@@ -65,17 +65,17 @@
 <game>
 <content class="fullwidth">
 <h1>Play the Game! </h1>
-<ul id="filters">
+<ul class="filters">
 	<h3>Filter by Type</h3>
-  	<li class="all_filter"><a href="#" data-filter="*">Show All</a></li>
-  	<li class="members_filter"><a href="#" data-filter=".member">Members</a></li>
-  	<li class="sustcenter_filter"><a href="#" data-filter=".sustcenter">Sustainable Centers</a></li>
-	<li class="comment_filter"><a href="#" data-filter=".comment">Comments</a></li>
-	<li class="article_filter"><a href="#" data-filter=".article">Articles</a></li>
-  	<li class="event_filter"><a href="#" data-filter=".event">Events</a></li>
-  	<li class="project_filter"><a href="#" data-filter=".project">Projects</a></li>
-	<li class="workshop_filter"><a href="#" data-filter=".workshop">Workshops</a></li>
-  	<li class="volunteer_filter"><a href="#" data-filter=".volunteering">Volunteer Vacancies</a></li>
+  	<li><a class="tiptip all_filter"       href="#" data-filter="*"       title="Show All"  >Show All</a></li>
+	<li><a class="tiptip members_filter"    href="#" data-filter=".member"    title="Members"    >Members</a></li>
+	<li><a class="tiptip sustcenter_filter"    href="#" data-filter=".sustcenter"  title="Sustainable Centers"   >Sustainable Centers</a></li>
+	<li><a class="tiptip comment_filter"    href="#" data-filter=".comment"    title="Comments"   >Comments</a></li>
+	<li><a class="tiptip article_filter"    href="#" data-filter=".article"    title="Articles">Articles</a></li>	
+	<li><a class="tiptip event_filter"        href="#" data-filter=".event"    title="Events">Events</a></li>
+	<li><a class="tiptip project_filter"    href="#" data-filter=".project"    title="Projects">Projects</a></li>	
+	<li><a class="tiptip workshop_filter"    href="#" data-filter=".workshop"  title="Workshops">Workshops</a></li>
+	<li><a class="tiptip volunteer_filter"     href="#" data-filter=".volunteering"  title="Volunteer Vacancies">Volunteer Vacancies</a></li>
 	<h3>Filter by category</h3>
  	<li class="building_filter"><a href="#" data-filter=".pet1">Building</a></li>
  	<li class="communitygov_filter"><a href="#" data-filter=".pet2">Community Governance</a></li>

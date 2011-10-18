@@ -72,7 +72,7 @@ $(document).ready(function(e){
 			}
 
 		});
-		$('#filters a').click(function(){
+		$('.filters a').click(function(){
 		  var selector = $(this).attr('data-filter');
 		  $('#container').isotope({ filter: selector });
 		  return false;
