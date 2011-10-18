@@ -337,7 +337,6 @@ function load_js_scripts($view){
 	if (!$js_loaded){
 		echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.easing-1.4.pack.js"></script>
 			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/jquery-ui-1.8.14.custom.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.core.min.js"></script>
