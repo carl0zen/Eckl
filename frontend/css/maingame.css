@@ -5,69 +5,6 @@
       #ffff33	rgb(255,255,51)
       #ff9933	rgb(255,153,51)
       #ff3333 rgb(255,51,51)**/
-	.filters a {
-	    background: url("images/iconsmenu.png") repeat scroll 0 0 transparent;
-	    display: inline;
-	    float: left;
-	    height: 45px;
-	    margin: 10px;
-	    text-indent: -100000px;
-	    width: 45px;
-	}
-	.filters li{
-		width:45px;
-		float:left;
-		list-style-type:none;
-		list-style-position: outside;
-	}
-	li a.all_filter {
-	    background-position: -163px -150px;
-	}
-	li a.members_filter{
-		background-position: -122px -442px;
-	}
-	li a.sustcenter_filter{
-		background-position: -118px -385px;
-	}
-	li a.comment_filter{
-		background-position: -163px -150px;
-	}
-	li a.article_filter{
-		background-position: -160px -195px;
-	}
-	li a.event_filter{
-		background-position: -163px -239px;
-	}
-	li a.project_filter{
-		background-position: -163px -409px;
-	}
-	li a.workshop_filter{
-		background-position: -157px -282px;
-	}
-	li a.volunteer_filter{
-		background-position: -163px -368px;
-	}
-	.building_filter{
-		background-position: -163px -150px;
-	}
-	.communitygov_filter{
-		background-position: -163px -150px;
-	}
-	.finance_filter{
-		background-position: -163px -150px;
-	}
-	.land_filter{
-		background-position: -163px -150px;
-	}
-	.culture_filter{
-
-	}
-	.tools_filter{
-
-	}
-	.health_filter{
-
-	}
 #container div.pet1{
 	border-top:5px solid #ff3333;
 }
@@ -178,13 +115,8 @@ height: 399px;
 z-index: -1;
 font-size:18px;
 }
-#titlecontainer a{
-  font-size:21px;
-	
-}
 .width1 #titlecontainer{
 	width:150px;
-	word-wrap:break-word;
 }
 .large #titlecontainer{
 	width:300px;
@@ -256,8 +188,8 @@ memberavatar img{
     line-height: 34px;
 }
 /** COMMENT **/
-#link{
-  position:absolute;
+span.link{
+
 }
 span.linkimage{
 	float:left;
@@ -272,16 +204,10 @@ span.linkimage{
 	line-height:17px;
 	margin-right:20px;
 }
-#commentsection {
-	font-size: 12px;
-	line-height: 12px;
-	margin-bottom: 100px;
-	height: 225px;
-	width: 376px;
-	position: relative;
-	overflow: auto;
-	margin-top: 100px;
-	padding-bottom: 25px;
+#commentsection{
+	font-size:12px;
+	line-height:12px;
+	margin-bottom:100px;
 }
 .nocomments{
 	float:right;
