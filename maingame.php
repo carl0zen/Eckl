@@ -65,25 +65,25 @@
 <game>
 <content class="fullwidth">
 <h1>Play the Game! </h1>
-<ul class="filters">
+<ul id="filters">
 	<h3>Filter by Type</h3>
-  	<li><a class="tiptip all_filter"		 	href="#" data-filter="*" 			title="Show All"	>Show All</a></li>
-  	<li><a class="tiptip members_filter"		href="#" data-filter=".member"		title="Members"		>Members</a></li>
-  	<li><a class="tiptip sustcenter_filter"		href="#" data-filter=".sustcenter"	title="Sustainable Centers"   >Sustainable Centers</a></li>
-	<li><a class="tiptip comment_filter"		href="#" data-filter=".comment"		title="Comments"   >Comments</a></li>
-	<li><a class="tiptip article_filter"		href="#" data-filter=".article"		title="Articles">Articles</a></li>
-  	<li><a class="tiptip event_filter"	    	href="#" data-filter=".event"		title="Events">Events</a></li>
-  	<li><a class="tiptip project_filter"		href="#" data-filter=".project"		title="Projects">Projects</a></li>
-	<li><a class="tiptip workshop_filter"		href="#" data-filter=".workshop"	title="Workshops">Workshops</a></li>
-  	<li><a class="tiptip volunteer_filter" 		href="#" data-filter=".volunteering"	title="Volunteer Vacancies">Volunteer Vacancies</a></li>
+  	<li class="all_filter"><a href="#" data-filter="*">Show All</a></li>
+  	<li class="members_filter"><a href="#" data-filter=".member">Members</a></li>
+  	<li class="sustcenter_filter"><a href="#" data-filter=".sustcenter">Sustainable Centers</a></li>
+	<li class="comment_filter"><a href="#" data-filter=".comment">Comments</a></li>
+	<li class="article_filter"><a href="#" data-filter=".article">Articles</a></li>
+  	<li class="event_filter"><a href="#" data-filter=".event">Events</a></li>
+  	<li class="project_filter"><a href="#" data-filter=".project">Projects</a></li>
+	<li class="workshop_filter"><a href="#" data-filter=".workshop">Workshops</a></li>
+  	<li class="volunteer_filter"><a href="#" data-filter=".volunteering">Volunteer Vacancies</a></li>
 	<h3>Filter by category</h3>
- 	<li><a class="tiptip building_filter"	  	href="#" data-filter=".pet1"		title="Building">Building</a></li>
- 	<li><a class="tiptip communitygov_filter"	href="#" data-filter=".pet2"		title="Community Governance">Community Governance</a></li>
- 	<li><a class="tiptip finance_filter"	  	href="#" data-filter=".pet3"		title="Finance& Economics">Finance & Economics</a></li>
- 	<li><a class="tiptip land_filter"		  	href="#" data-filter=".pet4"		title="Land & Nature">Land & Nature</a></li>
- 	<li><a class="tiptip culture_filter"	  	href="#" data-filter=".pet5"		title="Culture & Education">Culture & Education</a></li>
- 	<li><a class="tiptip tools_filter"	     	href="#" data-filter=".pet6"		title="Tools & Technology">Tools & Tech</a></li>
-		<li><a class="tiptip health_filter"	  	href="#" data-filter=".pet7"			title="Health & Spirituality">Health & Spirituality</a></li>
+ 	<li class="building_filter"><a href="#" data-filter=".pet1">Building</a></li>
+ 	<li class="communitygov_filter"><a href="#" data-filter=".pet2">Community Governance</a></li>
+ 	<li class="finance_filter"><a href="#" data-filter=".pet3">Finance & Economics</a></li>
+ 	<li class="land_filter"><a href="#" data-filter=".pet4">Land & Nature</a></li>
+ 	<li class="culture_filter"><a href="#" data-filter=".pet5">Culture & Education</a></li>
+ 	<li class="tools_filter"><a href="#" data-filter=".pet6">Tools & Tech</a></li>
+	<li class="health_filter"><a href="#" data-filter=".pet7">Health & Spirituality</a></li>
 </ul>
 <ul id="sort-by">
 	<h3>Sort By</h3>
@@ -100,29 +100,26 @@
 <div id="container">
 	<div class="element comment pet1">
 		<div id="memberpic"><img src="<?php $rand = rand(0,$size); echo $profiles[$rand]['ProfilePic'] ?>"></div>
-		<div id="titlecontainer">"Net Zero Homes - A Journey Toward Energy Self-Sufficiency <a href="http://goo.gl/2SvM9" target="_blank">http://goo.gl/2SvM9</a>"</div>
+		<div id="titlecontainer">"Net Zero Homes - A Journey Toward Energy Self-Sufficiency"</div>
 		<div id="content">
-			<div id="link">
-				<span class="linkimage">
-					<a class="video" href="http://www.youtube.com/watch?v=ElprHYTcZEw?fs=1&amp;autoplay=1" title="Net Zero Homes - A Journey Toward Energy Self-Sufficiency"><img src="http://i2.ytimg.com/vi/ElprHYTcZEw/default.jpg" ></a>
-				</span>
-				<p class="linkdescription">
-					Green Building spoke with builders, architects, remodeling contractors and homeowners about their efforts towards energy self-sufficiency and building zero energy homes.
-				</p>
-			</div><!-- Link -->
+			<span class="linkimage">
+				<a class="video" href="http://www.youtube.com/watch?v=ElprHYTcZEw?fs=1&amp;autoplay=1" title="Net Zero Homes - A Journey Toward Energy Self-Sufficiency"><img src="http://i2.ytimg.com/vi/ElprHYTcZEw/default.jpg" ></a>
+			</span>
+			<p class="linkdescription">
+				Green Building spoke with builders, architects, remodeling contractors and homeowners about their efforts towards energy self-sufficiency and building zero energy homes.
+			</p>
 			<div id="commentsection">
 				<?php for($x=0; $x < rand(0,50); $x++){?>
 				<div class="comment">
-					<a href="#"><memberavatar><img src="<?php $rand = rand(0,$size); echo $profiles[$rand]['ProfilePic']; ?>"></memberavatar> <?php echo $profiles[$rand]['Name'] ?></a> said:
-					<p><?php echo $comments[rand(0,$sizecomm)]['Text']?></p>
+					<a href="#"><memberavatar><img src="<?php $rand = rand(0,$size); echo $profiles[$rand]['ProfilePic']; ?>"></memberavatar> <?php echo $profiles[$rand]['Name'] ?></a> said:					<p><?php echo $comments[rand(0,$sizecomm)]['Text']?></p>
 					<div id="reactionpoints">
 						<div class="dharma"></div>
 						<div class="karma"></div>
 					</div>
 				</div>
 				<?php }?>
-			</div><!--Comment Section-->
-		</div><!-- Content -->
+			</div>
+		</div><!-- content -->
 		<div id="box">
 			<div class="boxcontent">
 				
