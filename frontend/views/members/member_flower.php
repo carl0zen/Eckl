@@ -16,13 +16,13 @@
 	<div class="petal">
 		<span class="text">Finance & Economics</span>
 		<input type="hidden" class="percent" value="80" />
-		<input type="hidden" class="color" value="#ffff33" />
+		<input type="hidden" class="color" value="#F3DD1E" />
 		<input type="hidden" class="noSkills" value="10" />
 	</div>
 	<div class="petal">
 		<span class="text">Land & Nature</span>
 		<input type="hidden" class="percent" value="80" />
-		<input type="hidden" class="color" value="#99ff33" />
+		<input type="hidden" class="color" value="#A4DE00" />
 		<input type="hidden" class="noSkills" value="10" />
 	</div>
 	<div class="petal">
@@ -34,7 +34,7 @@
 	<div class="petal">
 		<span class="text">Tools & Tech</span>
 		<input type="hidden" class="percent" value="90" />
-		<input type="hidden" class="color" value="#6633cc" />
+		<input type="hidden" class="color" value="#403BDC" />
 		<input type="hidden" class="noSkills" value="10" />
 	</div>
 	<div class="petal">

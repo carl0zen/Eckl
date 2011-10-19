@@ -75,13 +75,13 @@
 						);
 						$sizelinks = count($commentlinks)-1;
 						$petals= array(
-								array('Class' => 'pet1',		'Name'=>'Building',					'color'=> '#ff3333'),
-								array('Class' => 'pet2',		'Name'=>'Community Governance',		'color'=> '#ff3333'),
-								array('Class' => 'pet3',		'Name'=>'Finance & Economics',		'color'=> '#ff3333'),
-								array('Class' => 'pet4',		'Name'=>'Land & Nature',			'color'=> '#ff3333'),
-								array('Class' => 'pet5',		'Name'=>'Culture & Education',		'color'=> '#ff3333'),
-								array('Class' => 'pet6',		'Name'=>'Tools & Technology',		'color'=> '#ff3333'),
-								array('Class' => 'pet7',		'Name'=>'Health & Spirituality',	'color'=> '#ff3333'),
+								array('Class' => 'pet1',		'Name'=>'Building',					'Color'=> 'red'),
+								array('Class' => 'pet2',		'Name'=>'Community Governance',		'Color'=> 'orange'),
+								array('Class' => 'pet3',		'Name'=>'Finance & Economics',		'Color'=> 'yellow'),
+								array('Class' => 'pet4',		'Name'=>'Land & Nature',			'Color'=> 'green'),
+								array('Class' => 'pet5',		'Name'=>'Culture & Education',		'Color'=> 'blue'),
+								array('Class' => 'pet6',		'Name'=>'Tools & Technology',		'Color'=> 'indigo'),
+								array('Class' => 'pet7',		'Name'=>'Health & Spirituality',	'Color'=> 'purple'),
 						);
 			?>
 <game>
@@ -165,6 +165,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->
@@ -206,6 +207,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->
@@ -247,6 +249,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->
@@ -288,6 +291,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->
@@ -329,6 +333,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->
@@ -370,6 +375,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->
@@ -411,6 +417,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->
@@ -452,6 +459,7 @@
 						<div class="date"><span class="timestamp hidden"><?php echo $date = rand(1262055681,1318605196); ?></span> <?php echo date("M d Y", $date);?></div>
 						<span class="membername"><a href="#"><?php echo $profiles[$rand]['Name'] ?></a></span>
 						<span class="type web"></span>
+						<div id="commentbutton" class="<?php echo $petals[$randpetal]['Color']; ?>_bg">Comment</div>
 						<span class="nocomments"><?php echo $x; ?> comments</span>
 					</div>
 				</div><!-- box-->

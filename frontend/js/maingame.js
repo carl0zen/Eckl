@@ -19,6 +19,10 @@ $(document).ready(function(e){
 			});
 			return false;
 	});
+	// Behavior when commenting an element
+	$('#commenbutton').click(function(e){
+		
+	});
 	//Changes the size of the elements depending on the Reaction Points
 	$('#container .element').each(function(e){
 		rp = $(this).find('.rp .val').html();
@@ -88,7 +92,7 @@ $(document).ready(function(e){
 		});
 		$('#sort-by a').click(function(){
 			$(this).parent().parent().find('.selected').removeClass('selected');
-			$(this).parent().addClass('selected');
+			$(this).addClass('selected');
 		  	var sortName = $(this).attr('href').slice(1);
 		  	$('#container').isotope({ sortBy : sortName });
 		  	return false;

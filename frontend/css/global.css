@@ -1,10 +1,24 @@
-/**	  #cc3399
-	  #6633cc
-      #33cccc
-      #99ff33
-      #ffff33
-      #ff9933
-      #ff3333 **/
+.red_bg{
+	background-color:#ff3333;
+}
+.orange_bg{
+	background-color:#ff9933;
+}
+.yellow_bg{
+	background-color:#F3DD1E;
+}
+.green_bg{
+	background-color:#A4DE00;
+}
+.blue_bg{
+	background-color:#33cccc;
+}
+.indigo_bg{
+	background-color:#403BDC;
+}
+.purple_bg{
+	background-color:#cc3399;
+}
 	@font-face {
 	    font-family: 'SoftCompoundRegular';
 	    src: url('fonts/soft_compound-webfont.eot');
@@ -679,14 +693,14 @@ flower div.land #percSkills{
 	color:#222;
 }
 flower div.finance #petalName, flower div.finance skill grade{
-	background:#ffff33;
+	background:#F3DD1E;
 	color:#222;
 }
 flower div.finance #percSkills{
 	color:#222;
 }
 flower div.land #petalName, flower div.land skill grade{
-	background:#99ff33;
+	background:#A4DE00;
 	color:#222;
 }
 flower div.culture #petalName, flower div.culture skill grade{
@@ -694,7 +708,7 @@ flower div.culture #petalName, flower div.culture skill grade{
 	color: #fff;
 }
 flower div.tools #petalName, flower div.tools skill grade{
-	background:#6633cc;
+	background:#403BDC;
 	color: #fff;
 }
 flower div.health #petalName, flower div.health skill grade{
