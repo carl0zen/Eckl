@@ -464,6 +464,36 @@ button{
 			0px -1px 1px rgba(000,000,000,0.2),
 			0px 1px 0px rgba(255,255,255,0.3);
 }
+
+/** ICONS **/
+.icon{
+	background:url("images/iconsmenu.png") no-repeat;
+	
+}
+.articleicon{
+	background-position: -160px -195px;
+}
+.commenticon{
+	background-position: -163px -150px;
+}
+.membericon{
+	background-position: -122px -442px;
+}
+.sustcentericon{
+	background-position: -118px -390px;
+}
+.eventicon{
+	background-position: -163px -244px;
+}
+.projecticon{
+	background-position: -164px -434px;
+}
+.workshopicon{
+	background-position: -161px -293px;
+}
+.volunteeringicon{
+	background-position: -165px -392px;
+}
 button.green{
 	background: #A7E300;
 	background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));

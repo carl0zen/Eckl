@@ -12,7 +12,7 @@ define('_LANG_', 'es');
 // Global Variables
 
 define('_ROOT_PATH_',dirname(dirname(__FILE__)).'/');
-define('_ROOT_URL_', 'http://ecologikal.sytes.net:8888/github/Eckl/' );
+define('_ROOT_URL_', 'http://localhost:8888/github/Eckl/' );
 define('_PLUGINS_URL_'  		,_ROOT_URL_.'_plugins/' ); 
 define('_PLUGINS_PATHL_'		,_ROOT_PATH_. '_plugins/' ); 
 define('_FRONTEND_URL_'			,_ROOT_URL_.'frontend/');
@@ -89,6 +89,9 @@ $petal_name[5] = 'Culture & Education';
 $petal_name[6] = 'Tools & Technology';
 $petal_name[7] = 'Health & Spirituality';
 
+// GAME SECTION
+
+$noelements = 20;
 
 
 ?>

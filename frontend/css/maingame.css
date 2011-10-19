@@ -5,6 +5,121 @@
       #ffff33	rgb(255,255,51)
       #ff9933	rgb(255,153,51)
       #ff3333 rgb(255,51,51)**/
+
+.icon{
+	width:45px;
+	height:45px;
+	margin:10px;
+	float:left;
+}
+.filters a {
+    background: url("images/iconsmenu.png") repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 45px;
+    margin: 10px;
+    text-indent: -100000px;
+    width: 45px;
+}
+.filters #type, .filters #category{
+	position:fixed;
+	width:70px;
+}
+.filters #type{
+	margin-left:-120px;
+	margin-top:-6px;
+}
+.filters #category{
+	margin-left:800px;
+}
+.filters li{
+	width:67px;
+	float:left;
+	list-style-type:none;
+	list-style-position: outside;
+}
+li a.all_filter {
+    background-position: -163px -150px;
+}
+li a.members_filter{
+	background-position: -122px -442px;
+}
+li a.sustcenter_filter{
+	background-position: -118px -390px;
+}
+li a.comment_filter{
+	background-position: -163px -150px;
+}
+li a.article_filter{
+	background-position: -160px -195px;
+}
+li a.event_filter{
+	background-position: -163px -244px;
+}
+li a.project_filter{
+	background-position: -164px -434px;
+}
+li a.workshop_filter{
+	background-position: -161px -293px;
+}
+li a.volunteer_filter{
+	background-position: -165px -392px;
+}
+.building_filter{
+	background-position: -163px -150px;
+}
+.communitygov_filter{
+	background-position: -163px -150px;
+}
+.finance_filter{
+	background-position: -163px -150px;
+}
+.land_filter{
+	background-position: -163px -150px;
+}
+.culture_filter{
+
+}
+.tools_filter{
+
+}
+.health_filter{
+
+}
+.selected{
+	background-color:#ddd;
+	border-radius:10px 0 0 10px;
+}
+#sort {
+    background: none repeat scroll 0 0 #333333;
+    height: 50px;
+    margin-left: -25px;
+    position: fixed;
+    top: 0;
+    width: 870px;
+    z-index: 10000;
+}
+#sort ul{
+	position:absolute;
+}
+#sort-by{
+	left:-25px;
+}
+#sort ul li{
+	list-style-type:none;
+	float:left;
+	margin:0 10px;
+}
+#sort-direction{
+	right:144px;
+	
+}
+content.fullwidth{
+	padding-top:40px;
+	z-index:1;
+	position:relative;
+	min-height:600px;
+}
 #container div.pet1{
 	border-top:5px solid #ff3333;
 }
@@ -104,6 +219,7 @@ div.rp{
 	padding:10px;
 	line-height:14px;
 }
+
 #content {
 position: absolute;
 width: 400px;
@@ -114,13 +230,25 @@ left: 396px;
 height: 399px;
 z-index: -1;
 font-size:18px;
+box-shadow:0 0 15px #000;
+-webkit-box-shadow:0 0 15px #000;
+-moz-box-shadow:0 0 15px #000;
+}
+#titlecontainer{
+	font-family:Helvetica Neue;
+	font-weight:bold;
+}
+#titlecontainer a{
+	font-size:21px;
 }
 .width1 #titlecontainer{
-	width:150px;
+	width:170px;
+	word-wrap:break-word;
 }
 .large #titlecontainer{
-	width:300px;
+	width:370px;
 }
+
 #box{
 	background:rgba(40,40,40,.8);
 	display:block;
@@ -166,6 +294,7 @@ div.large:after{
 }
 memberavatar img{
 	width:35px;
+	border:none;
 }
 #container p{
 	text-shadow:2px 2px 2px #000;
@@ -188,26 +317,30 @@ memberavatar img{
     line-height: 34px;
 }
 /** COMMENT **/
-span.link{
-
+#link{
+	position:absolute;
 }
 span.linkimage{
 	float:left;
 	margin-right:10px;
 	margin-bottom:10px;
 }
-#content{
-	overflow:auto;
-}
 #content p.linkdescription{
 	font-size:13px;
 	line-height:17px;
 	margin-right:20px;
 }
-#commentsection{
-	font-size:12px;
-	line-height:12px;
-	margin-bottom:100px;
+#commentsection {
+font-size: 12px;
+line-height: 12px;
+margin-bottom: 100px;
+height: 225px;
+
+width: 376px;
+position: relative;
+overflow: auto;
+margin-top: 100px;
+padding-bottom: 25px;
 }
 .nocomments{
 	float:right;
@@ -225,7 +358,7 @@ span.linkimage{
 #reactionpoints{
 	float:right;
 	margin:10px;
-	
+
 }
 #reactionpoints div{
 	border-radius:9px;
