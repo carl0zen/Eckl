@@ -333,14 +333,19 @@ function load_js_scripts($view){
 	<script src="'._PLUGINS_URL_.'jquery.mousewheel.js"></script> 
 	<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.position.min.js"></script>
 	<script src="'._PLUGINS_URL_.'jquery.fileupload/jquery.iframe-transport.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
 **/
 	if (!$js_loaded){
+<<<<<<< HEAD
 <<<<<<< HEAD
 		echo '<script src="'._PLUGINS_URL_.'jquery/jquery-1.6.1.min.js"></script>
 			<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 =======
 		echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
 >>>>>>> blackandwhite
+=======
+		echo '<script src="'._PLUGINS_URL_.'jquery/jquery-1.5.1.min.js"></script>
+>>>>>>> MacBook Pro Deprecated Update
 			<script src="'._PLUGINS_URL_.'jquery/jquery-ui-1.8.14.custom.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.core.min.js"></script>
 			<script src="'._PLUGINS_URL_.'jquery/ui/minified/jquery.ui.dialog.min.js"></script>
@@ -373,9 +378,15 @@ function load_js_scripts($view){
 				<script src="'._PLUGINS_URL_.'jquery.isotope/jquery.isotope.min.js" type="text/javascript" charset="utf-8"></script>';
 			break;
 		case 'index':
+<<<<<<< HEAD
 			echo '<script src="'._JS_URL_.'index.js"></script>';
 <<<<<<< HEAD
 =======
+=======
+			echo '<script src="'._JS_URL_.'index.js"></script>
+					<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+					<script type="text/javascript" src="'._PLUGINS_URL_.'fancybox/jquery.easing-1.4.pack.js"></script>';
+>>>>>>> MacBook Pro Deprecated Update
 				
 >>>>>>> blackandwhite
 			break;		
@@ -400,7 +411,8 @@ function load_css_files($view){
 			echo '<link rel="stylesheet" href="'._CSS_URL_.'maingame.css" type="text/css" />';
 			break;	
 		case 'index':
-			echo '<link rel="stylesheet" href="'._CSS_URL_.'index.css" type="text/css" />';
+			echo '<link rel="stylesheet" href="'._CSS_URL_.'index.css" type="text/css" />
+					<link rel="stylesheet" href="'._PLUGINS_URL_.'fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />';
 			break;
 		case 'game':
 			echo '<link rel="stylesheet" href="'._CSS_URL_.'game.css" type="text/css" />';

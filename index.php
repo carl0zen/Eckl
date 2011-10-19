@@ -64,10 +64,14 @@
 					</mainsection>
 					<gamesection>
 <<<<<<< HEAD
+<<<<<<< HEAD
 						<videoimage></video>
 =======
 						<videoimage ><a href="#" class="bwWrapper"><img src="<?=_IMAGES_URL_?>videoimage.png" width="400" height="400"></a></videoimage>
 >>>>>>> blackandwhite
+=======
+						<videoimage ><a href="http://www.youtube.com/watch?v=JKxmH-YBveI?autoplay=1" title="Introductory Video on How to Play the Game and Live the Ecologikal Experience" class="iframe bwWrapper"><img src="<?=_IMAGES_URL_?>videoimage.png" width="400" height="400"></a></videoimage>
+>>>>>>> MacBook Pro Deprecated Update
 						<h2 class="play">Play the game</h2>
 						<gamequote> With Ecologikal you can develop your skills while sharing <strong>useful</strong> info, traveling as <strong>volunteer</strong> or ecotourist to <a href="#" class="tiptip" title="Click to learn what are these?">Sustainable centers</a>. Each action adds up in <strong>ecopoints</strong></gamequote>
 						<arrow1></arrow1>

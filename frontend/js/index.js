@@ -25,8 +25,35 @@ $(document).ready(function(e){
 				$('div.#accountlist').toggle();
 			});
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		$('.bwWrapper').BlackAndWhite();
+=======
+//		$('.bwWrapper').BlackAndWhite();
+		
+		/*::PLUGINS::
+		JQuery Fancybox
+		 This is basic - uses default settings */
+
+			$("a#single_image").fancybox();
+
+			/* Using custom settings */
+
+			$("a#inline").fancybox({
+				'hideOnContentClick': true
+			});
+
+			/* Apply fancybox to multiple items */
+
+			$("a").fancybox({
+				'transitionIn'	:	'elastic',
+				'transitionOut'	:	'elastic',
+				'speedIn'		:	600, 
+				'speedOut'		:	200, 
+				'overlayShow'	:	false
+			});
+		
+>>>>>>> MacBook Pro Deprecated Update
 			
 	/**			
 			$('videoimage').hover(function(e){
